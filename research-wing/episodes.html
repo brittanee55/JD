@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Episode Atlas | Human Knowledge Atlas</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+  <script defer src="../js/cookie-consent.js"></script>  <link rel="stylesheet" href="../css/mobile-responsive.css" />
+  <script defer src="../js/mobile-responsive.js"></script>
+  <script defer src="../js/mobile-portrait-fit.js"></script>
+  <link rel="stylesheet" href="../css/premium-mobile-menu.css" />
+  <script defer src="../js/premium-mobile-menu.js"></script>
+  <link rel="stylesheet" href="css/mobile-cutoff-fix.css">
+  <link rel="stylesheet" href="../css/top-left-jd-only.css" />
+</head>
+
+<body>
+
+<header class="site-header jd-one-line-header">
+  <nav class="jd-one-line-navbar" aria-label="Main navigation">
+    <a class="jd-one-line-logo" href="../index.html" aria-label="JD home"><img class="jd-one-line-symbol" src="../assets/images/atlas-mark.svg" alt="JD logo mark" /><span>JD</span></a>
+
+    <div class="jd-one-line-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="../research-wing/episodes.html">Episodes</a>
+      <a href="../research-wing/people.html">People</a>
+      <a href="../research-wing/books.html">Books</a>
+      <a href="../research-wing/concepts.html">Concepts</a>
+      <a href="../exploration-wing/world-map.html">World Map</a>
+      <a href="../exploration-wing/timeline.html">Timeline</a>
+      <a href="../learning-wing/learning-paths.html">Learning</a>
+      <a href="../reflection-wing/journal-vault.html">Journal</a>
+      <a href="../reflection-wing/ai-episode-chat.html">AI Chat</a>
+      <a href="../community-wing/community.html">Community</a>
+    </div>
+
+    <a class="jd-one-line-login" href="../authentication/login.html">
+      <span class="login-icon">♙</span>
+      <span>Login / Sign Up</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- =========================
+       EPISODE ATLAS HERO
+       ========================= -->
+  <section class="page-hero episode-hero">
+    <div>
+      <p class="eyebrow">Research Wing</p>
+
+      <h1>Episode Atlas</h1>
+
+      <p>
+        Turn every podcast episode into a structured research dashboard with summaries,
+        timelines, maps, people, books, concepts, journal prompts, challenges, and AI-powered study tools.
+      </p>
+
+      <div class="button-row">
+        <a href="episode-profile.html" class="btn primary">Open Featured Episode →</a>
+        <a href="../reflection-wing/ai-episode-chat.html" class="btn secondary">Ask AI About an Episode</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       EPISODE SEARCH + FILTERS
+       ========================= -->
+  <section class="section episode-search-section">
+    <div class="section-title-row">
+      <div>
+        <p class="eyebrow">Browse Episodes</p>
+        <h2>Search the Atlas</h2>
+      </div>
+    </div>
+
+    <div class="database-tools">
+      <input
+        type="text"
+        id="episodeSearch"
+        placeholder="Search by topic, guest, concept, book, or location..."
+      />
+
+      <div class="filter-row">
+        <button class="theme-chip active" data-episode-filter="all">All</button>
+        <button class="theme-chip" data-episode-filter="intelligence">Intelligence</button>
+        <button class="theme-chip" data-episode-filter="history">History</button>
+        <button class="theme-chip" data-episode-filter="media">Media</button>
+        <button class="theme-chip" data-episode-filter="psychology">Psychology</button>
+        <button class="theme-chip" data-episode-filter="spirituality">Spirituality</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       FEATURED EPISODE
+       ========================= -->
+  <section class="section">
+    <article class="episode-feature-card">
+      <div class="episode-feature-image">
+        Featured Episode
+      </div>
+
+      <div>
+        <p class="eyebrow">Featured Atlas Entry</p>
+
+        <h2>The Intelligence Game: CIA, KGB & Global Power</h2>
+
+        <p class="meta">
+          Episode #175 · 3h 42m · Intelligence · History · Power
+        </p>
+
+        <p>
+          A deep dive into intelligence agencies, Cold War influence, information networks,
+          geopolitics, media systems, and the modern struggle for public trust.
+        </p>
+
+        <div class="episode-tags">
+          <span>Intelligence</span>
+          <span>Cold War</span>
+          <span>Media</span>
+          <span>Covert Action</span>
+          <span>Public Trust</span>
+        </div>
+
+        <div class="button-row">
+          <a href="episode-profile.html" class="btn primary">Open Episode Atlas →</a>
+          <a href="../exploration-wing/world-map.html" class="btn secondary">View Map Connections</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- =========================
+       EPISODE CARDS
+       ========================= -->
+  <section class="section episodes-grid-section">
+    <div class="episode-grid">
+
+      <article
+        class="episode-card"
+        data-episode-category="intelligence"
+        data-search="cia kgb intelligence cold war global power geopolitics"
+      >
+        <div class="episode-card-top">
+          <span class="episode-number">#175</span>
+          <span class="label documented">Documented</span>
+        </div>
+
+        <h3>The Intelligence Game: CIA, KGB & Global Power</h3>
+
+        <p>
+          Intelligence agencies, Cold War networks, information power, and covert influence.
+        </p>
+
+        <div class="episode-tags">
+          <span>CIA</span>
+          <span>KGB</span>
+          <span>Cold War</span>
+        </div>
+
+        <a href="episode-profile.html" class="read-more">Open Atlas →</a>
+      </article>
+
+      <article
+        class="episode-card"
+        data-episode-category="media"
+        data-search="media narratives propaganda journalism information public opinion"
+      >
+        <div class="episode-card-top">
+          <span class="episode-number">#142</span>
+          <span class="label open">Source Review</span>
+        </div>
+
+        <h3>Media Narratives & Public Opinion</h3>
+
+        <p>
+          How stories spread, how public opinion forms, and how media systems influence belief.
+        </p>
+
+        <div class="episode-tags">
+          <span>Media</span>
+          <span>Propaganda</span>
+          <span>Journalism</span>
+        </div>
+
+        <a href="episode-profile.html" class="read-more">Open Atlas →</a>
+      </article>
+
+      <article
+        class="episode-card"
+        data-episode-category="history"
+        data-search="ancient history civilization symbols egypt greece rome mythology"
+      >
+        <div class="episode-card-top">
+          <span class="episode-number">#118</span>
+          <span class="label documented">History</span>
+        </div>
+
+        <h3>Ancient Symbols & Lost Civilizations</h3>
+
+        <p>
+          A historical exploration of symbols, myths, architecture, memory, and civilization.
+        </p>
+
+        <div class="episode-tags">
+          <span>Egypt</span>
+          <span>Greece</span>
+          <span>Mythology</span>
+        </div>
+
+        <a href="episode-profile.html" class="read-more">Open Atlas →</a>
+      </article>
+
+      <article
+        class="episode-card"
+        data-episode-category="psychology"
+        data-search="trauma nervous system healing psychology human behavior"
+      >
+        <div class="episode-card-top">
+          <span class="episode-number">#096</span>
+          <span class="label documented">Psychology</span>
+        </div>
+
+        <h3>Trauma, Memory & The Nervous System</h3>
+
+        <p>
+          Psychology, trauma, embodiment, healing, memory, and behavioral patterns.
+        </p>
+
+        <div class="episode-tags">
+          <span>Trauma</span>
+          <span>Healing</span>
+          <span>Behavior</span>
+        </div>
+
+        <a href="episode-profile.html" class="read-more">Open Atlas →</a>
+      </article>
+
+      <article
+        class="episode-card"
+        data-episode-category="spirituality"
+        data-search="consciousness spirituality reality meditation meaning soul"
+      >
+        <div class="episode-card-top">
+          <span class="episode-number">#084</span>
+          <span class="label open">Open Question</span>
+        </div>
+
+        <h3>Consciousness, Meaning & Reality</h3>
+
+        <p>
+          A conversation exploring awareness, perception, spiritual traditions, and human meaning.
+        </p>
+
+        <div class="episode-tags">
+          <span>Consciousness</span>
+          <span>Meaning</span>
+          <span>Reality</span>
+        </div>
+
+        <a href="episode-profile.html" class="read-more">Open Atlas →</a>
+      </article>
+
+      <article
+        class="episode-card"
+        data-episode-category="history"
+        data-search="financial systems banking institutions power networks diplomacy"
+      >
+        <div class="episode-card-top">
+          <span class="episode-number">#061</span>
+          <span class="label disputed">Disputed</span>
+        </div>
+
+        <h3>Banking, Diplomacy & Power Networks</h3>
+
+        <p>
+          Institutions, finance, diplomacy, global systems, and competing interpretations of power.
+        </p>
+
+        <div class="episode-tags">
+          <span>Finance</span>
+          <span>Diplomacy</span>
+          <span>Institutions</span>
+        </div>
+
+        <a href="episode-profile.html" class="read-more">Open Atlas →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       HOW AN EPISODE BECOMES AN ATLAS
+       ========================= -->
+  <section class="section process-section">
+    <p class="eyebrow center">Episode Transformation</p>
+
+    <h2 class="center">
+      Every episode becomes a connected research system.
+    </h2>
+
+    <div class="process-grid">
+
+      <article class="process-card">
+        <span>01</span>
+        <h3>Listen</h3>
+        <p>Start with the full conversation, transcript, notes, and major themes.</p>
+      </article>
+
+      <article class="process-card">
+        <span>02</span>
+        <h3>Extract</h3>
+        <p>Pull out people, places, books, concepts, historical events, and claims.</p>
+      </article>
+
+      <article class="process-card">
+        <span>03</span>
+        <h3>Connect</h3>
+        <p>Link every idea to the map, timeline, concept library, and related episodes.</p>
+      </article>
+
+      <article class="process-card">
+        <span>04</span>
+        <h3>Reflect</h3>
+        <p>Create prompts, challenges, and learning paths so users can apply what they learned.</p>
+      </article>
+
+    </div>
+  </section>
+
+
+<section class="section"><div class="notice-box"><strong>New:</strong> The Atlas now includes a <a href="transcripts.html">Transcript Library</a> for pasted YouTube transcripts, source-review notes, and searchable episode research.</div></section>
+
+<section class="legal-report-strip polished-report-strip">
+  <div class="report-copy">
+    <span class="report-icon">⚑</span>
+    <div>
+      <h3>Report Content</h3>
+      <p>Notice something inaccurate, unsafe, inaccessible, or copyright-sensitive? Let us know so we can review it.</p>
+    </div>
+  </div>
+  <a class="report-button" href="../legal/contact.html">Report Issue</a>
+</section>
+
+</main>
+
+<footer class="footer hka-screenshot-footer hka-footer-refined-layout">
+  <div class="hka-footer-top">
+    <p>© 2026 Human Knowledge Atlas. All rights reserved.</p>
+
+    <div class="hka-footer-main-links">
+      <a href="../legal/editorial-standards.html">Editorial Standards</a>
+      <a href="../legal/privacy-policy.html">Privacy Policy</a>
+      <a href="../legal/terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+
+  <div class="hka-footer-legal-links">
+    <a href="../legal/privacy-policy.html">Privacy</a>
+    <a href="../legal/cookie-policy.html">Cookies</a>
+    <a href="../legal/terms-of-service.html">Terms</a>
+    <a href="../legal/ai-disclaimer.html">AI Disclaimer</a>
+    <a href="../legal/accessibility.html">Accessibility</a>
+    <a href="../legal/data-request.html">Data Request</a>
+    <a href="../legal/do-not-sell.html">Do Not Sell / Share</a>
+    <a href="../legal/copyright.html">Copyright / DMCA</a>
+    <a href="../legal/contact.html">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

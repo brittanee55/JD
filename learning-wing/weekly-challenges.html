@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Weekly Challenges | Human Knowledge Atlas</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+  <script defer src="../js/cookie-consent.js"></script>  <link rel="stylesheet" href="../css/mobile-responsive.css" />
+  <script defer src="../js/mobile-responsive.js"></script>
+  <script defer src="../js/mobile-portrait-fit.js"></script>
+  <link rel="stylesheet" href="../css/premium-mobile-menu.css" />
+  <script defer src="../js/premium-mobile-menu.js"></script>
+  <link rel="stylesheet" href="css/mobile-cutoff-fix.css">
+  <link rel="stylesheet" href="../css/top-left-jd-only.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="../index.html" class="logo"><span>JD</span></a>
+<div class="nav-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="../research-wing/episodes.html">Episodes</a>
+      <a href="../research-wing/people.html">People</a>
+      <a href="../research-wing/books.html">Books</a>
+      <a href="../research-wing/concepts.html">Concepts</a>
+      <a href="../exploration-wing/world-map.html">World Map</a>
+      <a href="../exploration-wing/timeline.html">Timeline</a>
+      <a href="learning-paths.html">Learning</a>
+      <a href="../reflection-wing/journal-vault.html">Journal</a>
+      <a href="../reflection-wing/ai-episode-chat.html">AI Chat</a>
+      <a href="../community-wing/community.html">Community</a>
+      
+    </div>
+
+    <div class="nav-actions">
+      <a href="../authentication/login.html" class="login-signup-btn">
+        <span class="login-icon">♙</span>
+        Login / Sign Up
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero challenges-hero">
+    <p class="eyebrow">Learning Wing</p>
+
+    <h1>Weekly Challenges</h1>
+
+    <p>
+      Turn learning into action with weekly research, reflection, journaling, source review,
+      and real-world application challenges.
+    </p>
+  </section>
+
+  <section class="section challenges-search-section">
+    <div class="section-title-row">
+      <div>
+        <p class="eyebrow">Browse Challenges</p>
+        <h2>Search by skill, topic, or challenge type</h2>
+      </div>
+    </div>
+
+    <div class="database-tools">
+      <input
+        type="text"
+        id="challengeSearch"
+        placeholder="Search by research, journal, source, reflection, action, or topic..."
+      />
+
+      <div class="filter-row">
+        <button class="theme-chip active" data-challenge-filter="all">All</button>
+        <button class="theme-chip" data-challenge-filter="research">Research</button>
+        <button class="theme-chip" data-challenge-filter="journal">Journal</button>
+        <button class="theme-chip" data-challenge-filter="source">Source Review</button>
+        <button class="theme-chip" data-challenge-filter="action">Action</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured-challenge-section">
+    <article class="challenge-feature-card">
+      <div>
+        <p class="eyebrow">This Week’s Challenge</p>
+
+        <h2>Verify One Historical Claim</h2>
+
+        <p>
+          Choose one claim from an episode. Find one source that supports it, one source that questions it,
+          and one neutral historical source. Then write what is documented and what remains uncertain.
+        </p>
+
+        <div class="episode-tags">
+          <span>Research</span>
+          <span>Source Literacy</span>
+          <span>History</span>
+          <span>30–45 Minutes</span>
+        </div>
+
+        <button class="btn primary challenge-start-btn">Start Challenge</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="section challenge-grid-section">
+    <div class="challenge-grid">
+
+      <article
+        class="weekly-challenge-card"
+        data-challenge-category="research"
+        data-search="research verify historical claim source evidence uncertainty"
+      >
+        <span class="label documented">Research</span>
+        <h3>Verify One Historical Claim</h3>
+        <p>Choose a claim and compare supporting, questioning, and neutral sources.</p>
+
+        <div class="episode-tags">
+          <span>Source Literacy</span>
+          <span>History</span>
+          <span>Evidence</span>
+        </div>
+
+        <button class="challenge-start-btn">Start Challenge</button>
+      </article>
+
+      <article
+        class="weekly-challenge-card"
+        data-challenge-category="journal"
+        data-search="journal reflection trust authority evidence belief"
+      >
+        <span class="label documented">Journal</span>
+        <h3>Trust & Authority Reflection</h3>
+        <p>Reflect on who you trust, why you trust them, and what evidence would change your mind.</p>
+
+        <div class="episode-tags">
+          <span>Reflection</span>
+          <span>Trust</span>
+          <span>Awareness</span>
+        </div>
+
+        <button class="challenge-start-btn">Start Challenge</button>
+      </article>
+
+      <article
+        class="weekly-challenge-card"
+        data-challenge-category="source"
+        data-search="source review primary secondary public records books articles"
+      >
+        <span class="label open">Source Review</span>
+        <h3>Primary vs Secondary Source Hunt</h3>
+        <p>Find one primary source and one secondary source related to an episode topic.</p>
+
+        <div class="episode-tags">
+          <span>Research</span>
+          <span>Records</span>
+          <span>Books</span>
+        </div>
+
+        <button class="challenge-start-btn">Start Challenge</button>
+      </article>
+
+      <article
+        class="weekly-challenge-card"
+        data-challenge-category="action"
+        data-search="action apply concept habit real life weekly practice"
+      >
+        <span class="label documented">Action</span>
+        <h3>Apply One Concept</h3>
+        <p>Choose one Atlas concept and apply it to one real-world conversation or decision.</p>
+
+        <div class="episode-tags">
+          <span>Application</span>
+          <span>Practice</span>
+          <span>Real Life</span>
+        </div>
+
+        <button class="challenge-start-btn">Start Challenge</button>
+      </article>
+
+      <article
+        class="weekly-challenge-card"
+        data-challenge-category="journal"
+        data-search="journal assumptions bias perspective beliefs self awareness"
+      >
+        <span class="label documented">Journal</span>
+        <h3>Assumption Audit</h3>
+        <p>Write down three assumptions you brought into an episode and where they came from.</p>
+
+        <div class="episode-tags">
+          <span>Bias</span>
+          <span>Reflection</span>
+          <span>Self-Awareness</span>
+        </div>
+
+        <button class="challenge-start-btn">Start Challenge</button>
+      </article>
+
+      <article
+        class="weekly-challenge-card"
+        data-challenge-category="source"
+        data-search="source claim fact theory speculation label content safety"
+      >
+        <span class="label disputed">Source Review</span>
+        <h3>Label the Information</h3>
+        <p>Take five statements from an episode and label each as fact, claim, theory, speculation, or open question.</p>
+
+        <div class="episode-tags">
+          <span>Claims</span>
+          <span>Fact Check</span>
+          <span>Editorial</span>
+        </div>
+
+        <button class="challenge-start-btn">Start Challenge</button>
+      </article>
+
+    </div>
+  </section>
+
+
+<section class="legal-report-strip">
+  <p>Notice something inaccurate, unsafe, inaccessible, or copyright-sensitive?</p>
+  <a href="../legal/contact.html">Report Content</a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+
+    <div>
+      <a href="../index.html" class="footer-logo"><span>JD</span></a>
+      <p>A living map of conversations, ideas, history, and reflection.</p>
+    </div>
+
+    <div>
+      <h4>Explore</h4>
+      <a href="../research-wing/episodes.html">Episodes</a>
+      <a href="../research-wing/people.html">People</a>
+      <a href="../research-wing/books.html">Books</a>
+      <a href="../research-wing/concepts.html">Concepts</a>
+      <a href="../exploration-wing/world-map.html">World Map</a>
+    </div>
+
+    <div>
+      <h4>Learn</h4>
+      <a href="learning-paths.html">Learning Paths</a>
+      <a href="courses.html">Courses</a>
+      <a href="weekly-challenges.html">Challenges</a>
+    </div>
+
+    <div>
+      <h4>Reflect</h4>
+      <a href="../reflection-wing/journal-vault.html">Journal Vault</a>
+      <a href="../reflection-wing/ai-episode-chat.html">AI Episode Chat</a>
+    </div>
+
+    <div>
+      <h4>Community</h4>
+      <a href="../community-wing/newsletter.html">Newsletter</a>
+      <a href="../community-wing/blog.html">Blog</a>
+      <a href="../community-wing/community.html">Community</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Human Knowledge Atlas. All rights reserved.</p>
+
+    <div>
+      <a href="../legal/editorial-standards.html">Editorial Standards</a>
+      <a href="../legal/privacy-policy.html">Privacy Policy</a>
+      <a href="../legal/terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+
+<div class="footer-legal-center">
+  <a href="../legal/privacy-policy.html">Privacy</a>
+  <a href="../legal/cookie-policy.html">Cookies</a>
+  <a href="../legal/terms-of-service.html">Terms</a>
+  <a href="../legal/ai-disclaimer.html">AI Disclaimer</a>
+  <a href="../legal/accessibility.html">Accessibility</a>
+  <a href="../legal/data-request.html">Data Request</a>
+  <a href="../legal/do-not-sell.html">Do Not Sell / Share</a>
+  <a href="../legal/copyright.html">Copyright / DMCA</a>
+  <a href="../legal/contact.html">Contact</a>
+</div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Concept Library | Human Knowledge Atlas</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+  <script defer src="../js/cookie-consent.js"></script>  <link rel="stylesheet" href="../css/mobile-responsive.css" />
+  <script defer src="../js/mobile-responsive.js"></script>
+  <script defer src="../js/mobile-portrait-fit.js"></script>
+  <link rel="stylesheet" href="../css/premium-mobile-menu.css" />
+  <script defer src="../js/premium-mobile-menu.js"></script>
+  <link rel="stylesheet" href="css/mobile-cutoff-fix.css">
+  <link rel="stylesheet" href="../css/top-left-jd-only.css" />
+</head>
+
+<body>
+
+<header class="site-header jd-one-line-header">
+  <nav class="jd-one-line-navbar" aria-label="Main navigation">
+    <a class="jd-one-line-logo" href="../index.html" aria-label="JD home"><img class="jd-one-line-symbol" src="../assets/images/atlas-mark.svg" alt="JD logo mark" /><span>JD</span></a>
+
+    <div class="jd-one-line-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="../research-wing/episodes.html">Episodes</a>
+      <a href="../research-wing/people.html">People</a>
+      <a href="../research-wing/books.html">Books</a>
+      <a href="../research-wing/concepts.html">Concepts</a>
+      <a href="../exploration-wing/world-map.html">World Map</a>
+      <a href="../exploration-wing/timeline.html">Timeline</a>
+      <a href="../learning-wing/learning-paths.html">Learning</a>
+      <a href="../reflection-wing/journal-vault.html">Journal</a>
+      <a href="../reflection-wing/ai-episode-chat.html">AI Chat</a>
+      <a href="../community-wing/community.html">Community</a>
+    </div>
+
+    <a class="jd-one-line-login" href="../authentication/login.html">
+      <span class="login-icon">♙</span>
+      <span>Login / Sign Up</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero concepts-hero">
+    <p class="eyebrow">Research Wing</p>
+
+    <h1>Concept Library</h1>
+
+    <p>
+      Explore the ideas behind each episode. Concepts connect conversations to books,
+      people, historical events, world locations, learning paths, and journal prompts.
+    </p>
+  </section>
+
+  <section class="section concepts-search-section">
+    <div class="section-title-row">
+      <div>
+        <p class="eyebrow">Browse Concepts</p>
+        <h2>Search by idea, topic, episode, or source</h2>
+      </div>
+    </div>
+
+    <div class="database-tools">
+      <input
+        type="text"
+        id="conceptSearch"
+        placeholder="Search by concept, topic, episode, book, person, or location..."
+      />
+
+      <div class="filter-row">
+        <button class="theme-chip active" data-concept-filter="all">All</button>
+        <button class="theme-chip" data-concept-filter="intelligence">Intelligence</button>
+        <button class="theme-chip" data-concept-filter="media">Media</button>
+        <button class="theme-chip" data-concept-filter="history">History</button>
+        <button class="theme-chip" data-concept-filter="psychology">Psychology</button>
+        <button class="theme-chip" data-concept-filter="spirituality">Spirituality</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured-concept-section">
+    <article class="concept-feature-card">
+      <div class="concept-symbol-large">🕵️</div>
+
+      <div>
+        <p class="eyebrow">Featured Concept</p>
+
+        <h2>Intelligence Agencies</h2>
+
+        <p>
+          Institutions that collect, analyze, protect, and sometimes act on information related
+          to national security, foreign policy, military strategy, cyber threats, and geopolitical risk.
+        </p>
+
+        <div class="concept-tags">
+          <span>CIA</span>
+          <span>National Security</span>
+          <span>Secrecy</span>
+          <span>Oversight</span>
+          <span>Public Records</span>
+        </div>
+
+        <div class="button-row">
+          <a href="concept-profile.html" class="btn primary">Open Concept Profile →</a>
+          <a href="../learning-wing/learning-paths.html" class="btn secondary">View Learning Path</a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="section concepts-grid-section">
+    <div class="concepts-grid">
+
+      <article
+        class="concept-card"
+        data-concept-category="intelligence"
+        data-search="intelligence agencies cia national security secrecy oversight public records"
+      >
+        <div class="concept-symbol">🕵️</div>
+        <span class="label documented">Intelligence</span>
+        <h3>Intelligence Agencies</h3>
+        <p>Institutions that collect and analyze information for national security decisions.</p>
+
+        <div class="concept-tags">
+          <span>CIA</span>
+          <span>Security</span>
+          <span>Oversight</span>
+        </div>
+
+        <a href="concept-profile.html" class="read-more">Open Concept →</a>
+      </article>
+
+      <article
+        class="concept-card"
+        data-concept-category="intelligence"
+        data-search="covert action secret operations intelligence influence political outcomes"
+      >
+        <div class="concept-symbol">🗝️</div>
+        <span class="label open">Needs Context</span>
+        <h3>Covert Action</h3>
+        <p>Secret activity designed to influence political, military, or social outcomes.</p>
+
+        <div class="concept-tags">
+          <span>Influence</span>
+          <span>Secrecy</span>
+          <span>Operations</span>
+        </div>
+
+        <a href="concept-profile.html" class="read-more">Open Concept →</a>
+      </article>
+
+      <article
+        class="concept-card"
+        data-concept-category="media"
+        data-search="propaganda media narratives public opinion influence communication"
+      >
+        <div class="concept-symbol">📰</div>
+        <span class="label documented">Media</span>
+        <h3>Propaganda</h3>
+        <p>Communication designed to influence beliefs, emotions, opinions, or behavior.</p>
+
+        <div class="concept-tags">
+          <span>Media</span>
+          <span>Narrative</span>
+          <span>Influence</span>
+        </div>
+
+        <a href="concept-profile.html" class="read-more">Open Concept →</a>
+      </article>
+
+      <article
+        class="concept-card"
+        data-concept-category="media"
+        data-search="source literacy critical thinking evidence claims speculation verification"
+      >
+        <div class="concept-symbol">🔎</div>
+        <span class="label documented">Research</span>
+        <h3>Source Literacy</h3>
+        <p>The ability to separate evidence, claims, theories, speculation, and open questions.</p>
+
+        <div class="concept-tags">
+          <span>Evidence</span>
+          <span>Claims</span>
+          <span>Verification</span>
+        </div>
+
+        <a href="concept-profile.html" class="read-more">Open Concept →</a>
+      </article>
+
+      <article
+        class="concept-card"
+        data-concept-category="psychology"
+        data-search="trauma nervous system memory psychology healing regulation"
+      >
+        <div class="concept-symbol">🧠</div>
+        <span class="label documented">Psychology</span>
+        <h3>Nervous System Regulation</h3>
+        <p>How the body and brain manage stress, safety, emotion, memory, and recovery.</p>
+
+        <div class="concept-tags">
+          <span>Trauma</span>
+          <span>Healing</span>
+          <span>Body</span>
+        </div>
+
+        <a href="concept-profile.html" class="read-more">Open Concept →</a>
+      </article>
+
+      <article
+        class="concept-card"
+        data-concept-category="spirituality"
+        data-search="consciousness spirituality awareness reality meaning perception"
+      >
+        <div class="concept-symbol">✨</div>
+        <span class="label open">Open Question</span>
+        <h3>Consciousness</h3>
+        <p>Awareness, perception, meaning, identity, and the mystery of subjective experience.</p>
+
+        <div class="concept-tags">
+          <span>Awareness</span>
+          <span>Meaning</span>
+          <span>Reality</span>
+        </div>
+
+        <a href="concept-profile.html" class="read-more">Open Concept →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section process-section">
+    <p class="eyebrow center">Concepts as Learning Bridges</p>
+
+    <h2 class="center">
+      Concepts help users understand the “why” behind the conversation.
+    </h2>
+
+    <div class="process-grid">
+      <article class="process-card">
+        <span>01</span>
+        <h3>Define</h3>
+        <p>Explain the concept clearly in beginner-friendly language.</p>
+      </article>
+
+      <article class="process-card">
+        <span>02</span>
+        <h3>Connect</h3>
+        <p>Link the concept to episodes, books, people, places, and timelines.</p>
+      </article>
+
+      <article class="process-card">
+        <span>03</span>
+        <h3>Question</h3>
+        <p>Show what is documented, disputed, theoretical, or still unknown.</p>
+      </article>
+
+      <article class="process-card">
+        <span>04</span>
+        <h3>Apply</h3>
+        <p>Turn big ideas into journal prompts, courses, and weekly challenges.</p>
+      </article>
+    </div>
+  </section>
+
+
+<section class="legal-report-strip polished-report-strip">
+  <div class="report-copy">
+    <span class="report-icon">⚑</span>
+    <div>
+      <h3>Report Content</h3>
+      <p>Notice something inaccurate, unsafe, inaccessible, or copyright-sensitive? Let us know so we can review it.</p>
+    </div>
+  </div>
+  <a class="report-button" href="../legal/contact.html">Report Issue</a>
+</section>
+
+</main>
+
+<footer class="footer hka-screenshot-footer hka-footer-refined-layout">
+  <div class="hka-footer-top">
+    <p>© 2026 Human Knowledge Atlas. All rights reserved.</p>
+
+    <div class="hka-footer-main-links">
+      <a href="../legal/editorial-standards.html">Editorial Standards</a>
+      <a href="../legal/privacy-policy.html">Privacy Policy</a>
+      <a href="../legal/terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+
+  <div class="hka-footer-legal-links">
+    <a href="../legal/privacy-policy.html">Privacy</a>
+    <a href="../legal/cookie-policy.html">Cookies</a>
+    <a href="../legal/terms-of-service.html">Terms</a>
+    <a href="../legal/ai-disclaimer.html">AI Disclaimer</a>
+    <a href="../legal/accessibility.html">Accessibility</a>
+    <a href="../legal/data-request.html">Data Request</a>
+    <a href="../legal/do-not-sell.html">Do Not Sell / Share</a>
+    <a href="../legal/copyright.html">Copyright / DMCA</a>
+    <a href="../legal/contact.html">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Journal Vault | Human Knowledge Atlas</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+  <script defer src="../js/cookie-consent.js"></script>  <link rel="stylesheet" href="../css/mobile-responsive.css" />
+  <script defer src="../js/mobile-responsive.js"></script>
+  <script defer src="../js/mobile-portrait-fit.js"></script>
+  <link rel="stylesheet" href="../css/premium-mobile-menu.css" />
+  <script defer src="../js/premium-mobile-menu.js"></script>
+  <link rel="stylesheet" href="css/mobile-cutoff-fix.css">
+  <link rel="stylesheet" href="../css/top-left-jd-only.css" />
+</head>
+
+<body>
+
+<header class="site-header jd-one-line-header">
+  <nav class="jd-one-line-navbar" aria-label="Main navigation">
+    <a class="jd-one-line-logo" href="../index.html" aria-label="JD home"><img class="jd-one-line-symbol" src="../assets/images/atlas-mark.svg" alt="JD logo mark" /><span>JD</span></a>
+
+    <div class="jd-one-line-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="../research-wing/episodes.html">Episodes</a>
+      <a href="../research-wing/people.html">People</a>
+      <a href="../research-wing/books.html">Books</a>
+      <a href="../research-wing/concepts.html">Concepts</a>
+      <a href="../exploration-wing/world-map.html">World Map</a>
+      <a href="../exploration-wing/timeline.html">Timeline</a>
+      <a href="../learning-wing/learning-paths.html">Learning</a>
+      <a href="../reflection-wing/journal-vault.html">Journal</a>
+      <a href="../reflection-wing/ai-episode-chat.html">AI Chat</a>
+      <a href="../community-wing/community.html">Community</a>
+    </div>
+
+    <a class="jd-one-line-login" href="../authentication/login.html">
+      <span class="login-icon">♙</span>
+      <span>Login / Sign Up</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero journal-hero">
+    <p class="eyebrow">Reflection Wing</p>
+
+    <h1>Journal Vault</h1>
+
+    <p>
+      Save reflections, episode notes, source questions, learning path thoughts,
+      personal insights, and weekly challenge responses in one private-feeling reflection space.
+    </p>
+  </section>
+
+  <section class="section">
+    <div class="notice-box">
+      <strong>Privacy Note:</strong>
+      This is a front-end demo. A real journal vault would need user accounts, privacy controls,
+      secure storage, and clear data policies.
+    </div>
+  </section>
+
+  <section class="journal-vault-layout">
+
+    <aside class="journal-sidebar">
+      <h3>Journal Tools</h3>
+      <a href="#new-entry">New Entry</a>
+      <a href="#saved">Saved Entries</a>
+      <a href="#prompts">Prompt Library</a>
+      <a href="#challenge">Challenge Reflection</a>
+      <a href="#source-notes">Source Notes</a>
+    </aside>
+
+    <div class="journal-content">
+
+      <section class="atlas-card" id="new-entry">
+        <p class="eyebrow">New Reflection</p>
+        <h2>Create a Journal Entry</h2>
+
+        <form class="journal-form" id="journalForm">
+          <label for="journalTitle">Entry Title</label>
+          <input type="text" id="journalTitle" placeholder="Example: What I learned from this episode" required />
+
+          <label for="journalCategory">Category</label>
+          <select id="journalCategory">
+            <option>Episode Reflection</option>
+            <option>Book Notes</option>
+            <option>Concept Reflection</option>
+            <option>Learning Path Notes</option>
+            <option>Weekly Challenge</option>
+            <option>Source Question</option>
+          </select>
+
+          <label for="journalText">Reflection</label>
+          <textarea id="journalText" placeholder="Write your thoughts here..." required></textarea>
+
+          <button type="submit" class="btn primary">Save Entry</button>
+        </form>
+      </section>
+
+      <section class="atlas-card" id="saved">
+        <p class="eyebrow">Saved Reflections</p>
+        <h2>Your Journal Entries</h2>
+
+        <div class="saved-journal-list" id="savedJournalList">
+          <article class="saved-journal-card">
+            <span class="label documented">Episode Reflection</span>
+            <h3>Trust, Evidence & Institutions</h3>
+            <p>
+              I noticed that I tend to trust information more when I can see the original source
+              or compare multiple viewpoints.
+            </p>
+          </article>
+
+          <article class="saved-journal-card">
+            <span class="label open">Source Question</span>
+            <h3>What should I verify?</h3>
+            <p>
+              I want to compare one podcast claim with a book, one public record, and one neutral article.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="atlas-card" id="prompts">
+        <p class="eyebrow">Prompt Library</p>
+        <h2>Reflection Prompts</h2>
+
+        <div class="prompt-grid">
+          <button class="prompt-card">What evidence would change my mind?</button>
+          <button class="prompt-card">What did I assume before listening?</button>
+          <button class="prompt-card">What source would help me understand this better?</button>
+          <button class="prompt-card">What idea challenged me?</button>
+          <button class="prompt-card">What do I need to research before sharing this?</button>
+          <button class="prompt-card">How does this connect to my life?</button>
+        </div>
+      </section>
+
+      <section class="atlas-card" id="challenge">
+        <p class="eyebrow">Weekly Challenge Reflection</p>
+        <h2>Challenge Notes</h2>
+
+        <div class="journal-area">
+          <label>What challenge did I complete?</label>
+          <textarea placeholder="Write the challenge name..."></textarea>
+
+          <label>What did I learn?</label>
+          <textarea placeholder="Write your insight..."></textarea>
+
+          <label>What do I want to do next?</label>
+          <textarea placeholder="Write your next action..."></textarea>
+        </div>
+      </section>
+
+      <section class="atlas-card" id="source-notes">
+        <p class="eyebrow">Source Notes</p>
+        <h2>Evidence & Research Tracker</h2>
+
+        <div class="source-note-grid">
+          <article class="source-note-card">
+            <h3>Documented</h3>
+            <p>Facts supported by reliable sources, records, or direct documentation.</p>
+          </article>
+
+          <article class="source-note-card">
+            <h3>Claimed</h3>
+            <p>Something said by a guest, author, journalist, or public figure.</p>
+          </article>
+
+          <article class="source-note-card">
+            <h3>Disputed</h3>
+            <p>A topic where credible sources disagree or interpret events differently.</p>
+          </article>
+
+          <article class="source-note-card">
+            <h3>Open Question</h3>
+            <p>A question that needs more evidence before making a conclusion.</p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+
+<section class="legal-report-strip polished-report-strip">
+  <div class="report-copy">
+    <span class="report-icon">⚑</span>
+    <div>
+      <h3>Report Content</h3>
+      <p>Notice something inaccurate, unsafe, inaccessible, or copyright-sensitive? Let us know so we can review it.</p>
+    </div>
+  </div>
+  <a class="report-button" href="../legal/contact.html">Report Issue</a>
+</section>
+
+</main>
+
+<footer class="footer hka-screenshot-footer hka-footer-refined-layout">
+  <div class="hka-footer-top">
+    <p>© 2026 Human Knowledge Atlas. All rights reserved.</p>
+
+    <div class="hka-footer-main-links">
+      <a href="../legal/editorial-standards.html">Editorial Standards</a>
+      <a href="../legal/privacy-policy.html">Privacy Policy</a>
+      <a href="../legal/terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+
+  <div class="hka-footer-legal-links">
+    <a href="../legal/privacy-policy.html">Privacy</a>
+    <a href="../legal/cookie-policy.html">Cookies</a>
+    <a href="../legal/terms-of-service.html">Terms</a>
+    <a href="../legal/ai-disclaimer.html">AI Disclaimer</a>
+    <a href="../legal/accessibility.html">Accessibility</a>
+    <a href="../legal/data-request.html">Data Request</a>
+    <a href="../legal/do-not-sell.html">Do Not Sell / Share</a>
+    <a href="../legal/copyright.html">Copyright / DMCA</a>
+    <a href="../legal/contact.html">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>People Database | Human Knowledge Atlas</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+  <script defer src="../js/cookie-consent.js"></script>  <link rel="stylesheet" href="../css/mobile-responsive.css" />
+  <script defer src="../js/mobile-responsive.js"></script>
+  <script defer src="../js/mobile-portrait-fit.js"></script>
+  <link rel="stylesheet" href="../css/premium-mobile-menu.css" />
+  <script defer src="../js/premium-mobile-menu.js"></script>
+  <link rel="stylesheet" href="css/mobile-cutoff-fix.css">
+  <link rel="stylesheet" href="../css/top-left-jd-only.css" />
+</head>
+
+<body>
+
+<header class="site-header jd-one-line-header">
+  <nav class="jd-one-line-navbar" aria-label="Main navigation">
+    <a class="jd-one-line-logo" href="../index.html" aria-label="JD home"><img class="jd-one-line-symbol" src="../assets/images/atlas-mark.svg" alt="JD logo mark" /><span>JD</span></a>
+
+    <div class="jd-one-line-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="../research-wing/episodes.html">Episodes</a>
+      <a href="../research-wing/people.html">People</a>
+      <a href="../research-wing/books.html">Books</a>
+      <a href="../research-wing/concepts.html">Concepts</a>
+      <a href="../exploration-wing/world-map.html">World Map</a>
+      <a href="../exploration-wing/timeline.html">Timeline</a>
+      <a href="../learning-wing/learning-paths.html">Learning</a>
+      <a href="../reflection-wing/journal-vault.html">Journal</a>
+      <a href="../reflection-wing/ai-episode-chat.html">AI Chat</a>
+      <a href="../community-wing/community.html">Community</a>
+    </div>
+
+    <a class="jd-one-line-login" href="../authentication/login.html">
+      <span class="login-icon">♙</span>
+      <span>Login / Sign Up</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- =========================
+       PEOPLE DATABASE HERO
+       ========================= -->
+  <section class="page-hero people-hero">
+    <p class="eyebrow">Research Wing</p>
+
+    <h1>People Database</h1>
+
+    <p>
+      Explore guests, authors, journalists, researchers, historical figures, institutions,
+      and public voices connected across episodes, books, concepts, timelines, and maps.
+    </p>
+  </section>
+
+  <!-- =========================
+       PEOPLE SEARCH + FILTERS
+       ========================= -->
+  <section class="section people-search-section">
+    <div class="section-title-row">
+      <div>
+        <p class="eyebrow">Browse People</p>
+        <h2>Search by role, topic, or connection</h2>
+      </div>
+    </div>
+
+    <div class="database-tools">
+      <input
+        type="text"
+        id="peopleSearch"
+        placeholder="Search by name, role, topic, episode, book, or concept..."
+      />
+
+      <div class="filter-row">
+        <button class="theme-chip active" data-people-filter="all">All</button>
+        <button class="theme-chip" data-people-filter="guest">Guests</button>
+        <button class="theme-chip" data-people-filter="author">Authors</button>
+        <button class="theme-chip" data-people-filter="journalist">Journalists</button>
+        <button class="theme-chip" data-people-filter="historical">Historical</button>
+        <button class="theme-chip" data-people-filter="institutional">Institutional</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================
+       FEATURED PEOPLE
+       ========================= -->
+  <section class="section featured-people-section">
+    <div class="people-feature-grid">
+
+      <article class="people-feature-card">
+        <div class="people-avatar-large">JK</div>
+
+        <div>
+          <p class="eyebrow">Featured Person</p>
+          <h2>John Kiriakou</h2>
+          <p>
+            Former CIA officer, whistleblower, author, and commentator connected to
+            intelligence, government secrecy, public accountability, and media conversations.
+          </p>
+
+          <div class="person-tags">
+            <span>CIA</span>
+            <span>Whistleblowing</span>
+            <span>National Security</span>
+            <span>Public Accountability</span>
+          </div>
+
+          <a href="person-profile.html" class="btn primary">Open Profile →</a>
+        </div>
+      </article>
+
+      <article class="people-side-card">
+        <h3>How People Connect</h3>
+        <p>
+          Every person can connect to episodes, books, concepts, world locations,
+          historical events, source questions, and related guests.
+        </p>
+
+        <ul>
+          <li>Appears in episodes</li>
+          <li>Connected to books</li>
+          <li>Linked to locations</li>
+          <li>Referenced in timelines</li>
+          <li>Attached to concepts</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       PEOPLE DATABASE CARDS
+       ========================= -->
+  <section class="section people-grid-section">
+    <div class="people-grid">
+
+      <article
+        class="person-card"
+        data-people-category="guest"
+        data-search="john kiriakou cia intelligence whistleblower national security accountability"
+      >
+        <div class="person-card-top">
+          <div class="person-avatar">JK</div>
+          <span class="label documented">Guest</span>
+        </div>
+
+        <h3>John Kiriakou</h3>
+        <p>
+          Former CIA officer and whistleblower connected to intelligence history and public accountability.
+        </p>
+
+        <div class="person-tags">
+          <span>CIA</span>
+          <span>Whistleblowing</span>
+          <span>Security</span>
+        </div>
+
+        <a href="person-profile.html" class="read-more">View Profile →</a>
+      </article>
+
+      <article
+        class="person-card"
+        data-people-category="author"
+        data-search="philip agee author cia inside the company intelligence covert action"
+      >
+        <div class="person-card-top">
+          <div class="person-avatar">PA</div>
+          <span class="label documented">Author</span>
+        </div>
+
+        <h3>Philip Agee</h3>
+        <p>
+          Former CIA officer and author connected to intelligence history and covert action debates.
+        </p>
+
+        <div class="person-tags">
+          <span>CIA</span>
+          <span>Author</span>
+          <span>Covert Action</span>
+        </div>
+
+        <a href="person-profile.html" class="read-more">View Profile →</a>
+      </article>
+
+      <article
+        class="person-card"
+        data-people-category="historical"
+        data-search="allen dulles cia director cold war intelligence history"
+      >
+        <div class="person-card-top">
+          <div class="person-avatar">AD</div>
+          <span class="label documented">Historical</span>
+        </div>
+
+        <h3>Allen Dulles</h3>
+        <p>
+          Former CIA director connected to Cold War intelligence history and institutional power.
+        </p>
+
+        <div class="person-tags">
+          <span>Cold War</span>
+          <span>CIA</span>
+          <span>History</span>
+        </div>
+
+        <a href="person-profile.html" class="read-more">View Profile →</a>
+      </article>
+
+      <article
+        class="person-card"
+        data-people-category="journalist"
+        data-search="ben swann journalist media independent journalism source analysis"
+      >
+        <div class="person-card-top">
+          <div class="person-avatar">BS</div>
+          <span class="label open">Journalist</span>
+        </div>
+
+        <h3>Ben Swann</h3>
+        <p>
+          Journalist connected to independent media, reporting, public narratives, and source analysis.
+        </p>
+
+        <div class="person-tags">
+          <span>Media</span>
+          <span>Journalism</span>
+          <span>Sources</span>
+        </div>
+
+        <a href="person-profile.html" class="read-more">View Profile →</a>
+      </article>
+
+      <article
+        class="person-card"
+        data-people-category="author"
+        data-search="noam chomsky author media propaganda manufacturing consent linguistics"
+      >
+        <div class="person-card-top">
+          <div class="person-avatar">NC</div>
+          <span class="label documented">Author</span>
+        </div>
+
+        <h3>Noam Chomsky</h3>
+        <p>
+          Author and scholar connected to media analysis, propaganda, language, and political thought.
+        </p>
+
+        <div class="person-tags">
+          <span>Media</span>
+          <span>Propaganda</span>
+          <span>Language</span>
+        </div>
+
+        <a href="person-profile.html" class="read-more">View Profile →</a>
+      </article>
+
+      <article
+        class="person-card"
+        data-people-category="institutional"
+        data-search="central intelligence agency cia institution intelligence national security"
+      >
+        <div class="person-card-top">
+          <div class="person-avatar">CIA</div>
+          <span class="label disputed">Institution</span>
+        </div>
+
+        <h3>Central Intelligence Agency</h3>
+        <p>
+          Institution connected to intelligence history, national security, oversight, and public records.
+        </p>
+
+        <div class="person-tags">
+          <span>Institution</span>
+          <span>Security</span>
+          <span>Records</span>
+        </div>
+
+        <a href="person-profile.html" class="read-more">View Profile →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =========================
+       CONNECTION EXPLANATION
+       ========================= -->
+  <section class="section process-section">
+    <p class="eyebrow center">People as Knowledge Nodes</p>
+
+    <h2 class="center">
+      A person profile is not just a biography. It is a connection point.
+    </h2>
+
+    <div class="process-grid">
+      <article class="process-card">
+        <span>01</span>
+        <h3>Episodes</h3>
+        <p>See every episode where the person appears or is discussed.</p>
+      </article>
+
+      <article class="process-card">
+        <span>02</span>
+        <h3>Books</h3>
+        <p>Connect people to books they wrote, mentioned, inspired, or are connected to.</p>
+      </article>
+
+      <article class="process-card">
+        <span>03</span>
+        <h3>Map</h3>
+        <p>Link people to places, institutions, countries, and historical locations.</p>
+      </article>
+
+      <article class="process-card">
+        <span>04</span>
+        <h3>Timeline</h3>
+        <p>Show how a person fits into larger historical movements and events.</p>
+      </article>
+    </div>
+  </section>
+
+
+<section class="legal-report-strip polished-report-strip">
+  <div class="report-copy">
+    <span class="report-icon">⚑</span>
+    <div>
+      <h3>Report Content</h3>
+      <p>Notice something inaccurate, unsafe, inaccessible, or copyright-sensitive? Let us know so we can review it.</p>
+    </div>
+  </div>
+  <a class="report-button" href="../legal/contact.html">Report Issue</a>
+</section>
+
+</main>
+
+<footer class="footer hka-screenshot-footer hka-footer-refined-layout">
+  <div class="hka-footer-top">
+    <p>© 2026 Human Knowledge Atlas. All rights reserved.</p>
+
+    <div class="hka-footer-main-links">
+      <a href="../legal/editorial-standards.html">Editorial Standards</a>
+      <a href="../legal/privacy-policy.html">Privacy Policy</a>
+      <a href="../legal/terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+
+  <div class="hka-footer-legal-links">
+    <a href="../legal/privacy-policy.html">Privacy</a>
+    <a href="../legal/cookie-policy.html">Cookies</a>
+    <a href="../legal/terms-of-service.html">Terms</a>
+    <a href="../legal/ai-disclaimer.html">AI Disclaimer</a>
+    <a href="../legal/accessibility.html">Accessibility</a>
+    <a href="../legal/data-request.html">Data Request</a>
+    <a href="../legal/do-not-sell.html">Do Not Sell / Share</a>
+    <a href="../legal/copyright.html">Copyright / DMCA</a>
+    <a href="../legal/contact.html">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
