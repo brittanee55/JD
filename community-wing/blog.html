@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Blog | Human Knowledge Atlas</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../script.js"></script>
+  <script defer src="../js/cookie-consent.js"></script>  <link rel="stylesheet" href="../css/mobile-responsive.css" />
+  <script defer src="../js/mobile-responsive.js"></script>
+  <script defer src="../js/mobile-portrait-fit.js"></script>
+  <link rel="stylesheet" href="../css/premium-mobile-menu.css" />
+  <script defer src="../js/premium-mobile-menu.js"></script>
+  <link rel="stylesheet" href="css/mobile-cutoff-fix.css">
+  <link rel="stylesheet" href="../css/top-left-jd-only.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <a href="../index.html" class="logo"><span>JD</span></a>
+<div class="nav-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="../research-wing/episodes.html">Episodes</a>
+      <a href="../research-wing/people.html">People</a>
+      <a href="../research-wing/books.html">Books</a>
+      <a href="../research-wing/concepts.html">Concepts</a>
+      <a href="../exploration-wing/world-map.html">World Map</a>
+      <a href="../exploration-wing/timeline.html">Timeline</a>
+      <a href="../learning-wing/learning-paths.html">Learning</a>
+      <a href="../reflection-wing/journal-vault.html">Journal</a>
+      <a href="../reflection-wing/ai-episode-chat.html">AI Chat</a>
+      <a href="community.html">Community</a>
+      
+    </div>
+
+    <div class="nav-actions">
+      <a href="../authentication/login.html" class="login-signup-btn">
+        <span class="login-icon">♙</span>
+        Login / Sign Up
+      </a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero blog-hero">
+    <p class="eyebrow">Community Wing</p>
+
+    <h1>Atlas Blog</h1>
+
+    <p>
+      Essays, explainers, research notes, source literacy guides, episode companions,
+      book reflections, map discoveries, and timeline deep dives.
+    </p>
+  </section>
+
+  <section class="section blog-search-section">
+    <div class="database-tools">
+      <input
+        type="text"
+        id="blogSearch"
+        placeholder="Search articles by topic, episode, concept, book, or location..."
+      />
+
+      <div class="filter-row">
+        <button class="theme-chip active" data-blog-filter="all">All</button>
+        <button class="theme-chip" data-blog-filter="episode">Episode Essays</button>
+        <button class="theme-chip" data-blog-filter="source">Source Literacy</button>
+        <button class="theme-chip" data-blog-filter="history">History</button>
+        <button class="theme-chip" data-blog-filter="reflection">Reflection</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured-blog-section">
+    <article class="blog-feature-card">
+      <div>
+        <p class="eyebrow">Featured Essay</p>
+
+        <h2>How to Listen to a Podcast Without Losing the Thread</h2>
+
+        <p>
+          A guide to turning long-form conversations into summaries, source questions,
+          timelines, maps, journal prompts, and learning paths.
+        </p>
+
+        <div class="episode-tags">
+          <span>Source Literacy</span>
+          <span>Reflection</span>
+          <span>Learning Method</span>
+        </div>
+
+        <a href="blog-post.html" class="btn primary">Read Essay →</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="section blog-grid-section">
+    <div class="blog-grid">
+
+      <article
+        class="blog-card"
+        data-blog-category="source"
+        data-search="source literacy facts claims speculation evidence verification podcast"
+      >
+        <span class="label documented">Source Literacy</span>
+        <h3>Fact, Claim, Theory, or Speculation?</h3>
+        <p>
+          A simple framework for labeling information before sharing or believing it.
+        </p>
+        <a href="blog-post.html">Read Post →</a>
+      </article>
+
+      <article
+        class="blog-card"
+        data-blog-category="episode"
+        data-search="episode companion intelligence cia kgb cold war public trust"
+      >
+        <span class="label documented">Episode Essay</span>
+        <h3>What Intelligence Episodes Teach Us About Public Trust</h3>
+        <p>
+          How intelligence conversations connect to secrecy, oversight, and historical context.
+        </p>
+        <a href="blog-post.html">Read Post →</a>
+      </article>
+
+      <article
+        class="blog-card"
+        data-blog-category="history"
+        data-search="history timeline cold war cia 1947 public records"
+      >
+        <span class="label documented">History</span>
+        <h3>Why 1947 Matters in the Atlas</h3>
+        <p>
+          A timeline note on national security, institutional history, and Cold War context.
+        </p>
+        <a href="blog-post.html">Read Post →</a>
+      </article>
+
+      <article
+        class="blog-card"
+        data-blog-category="reflection"
+        data-search="journal prompts reflection podcast learning personal insight"
+      >
+        <span class="label open">Reflection</span>
+        <h3>Journal Prompts for Difficult Conversations</h3>
+        <p>
+          Reflection prompts for episodes that challenge your beliefs or assumptions.
+        </p>
+        <a href="blog-post.html">Read Post →</a>
+      </article>
+
+      <article
+        class="blog-card"
+        data-blog-category="history"
+        data-search="world map locations washington dc langley london berlin"
+      >
+        <span class="label documented">Map Essay</span>
+        <h3>How Places Become Knowledge Nodes</h3>
+        <p>
+          Why locations matter when connecting podcasts to history and institutions.
+        </p>
+        <a href="blog-post.html">Read Post →</a>
+      </article>
+
+      <article
+        class="blog-card"
+        data-blog-category="source"
+        data-search="books reading trails source paths research notes"
+      >
+        <span class="label documented">Books</span>
+        <h3>Building a Book Trail From One Episode</h3>
+        <p>
+          How one conversation can become a reading path, source map, and learning plan.
+        </p>
+        <a href="blog-post.html">Read Post →</a>
+      </article>
+
+    </div>
+  </section>
+
+
+<section class="section"><div class="notice-box"><strong>New:</strong> The Atlas now includes a <a href="../research-wing/transcripts.html">Transcript Library</a> for pasted YouTube transcripts, source-review notes, and searchable episode research.</div></section>
+
+<section class="legal-report-strip">
+  <p>Notice something inaccurate, unsafe, inaccessible, or copyright-sensitive?</p>
+  <a href="../legal/contact.html">Report Content</a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-bottom">
+    <p>© 2026 Human Knowledge Atlas. All rights reserved.</p>
+  </div>
+
+<div class="footer-legal-center">
+  <a href="../legal/privacy-policy.html">Privacy</a>
+  <a href="../legal/cookie-policy.html">Cookies</a>
+  <a href="../legal/terms-of-service.html">Terms</a>
+  <a href="../legal/ai-disclaimer.html">AI Disclaimer</a>
+  <a href="../legal/accessibility.html">Accessibility</a>
+  <a href="../legal/data-request.html">Data Request</a>
+  <a href="../legal/do-not-sell.html">Do Not Sell / Share</a>
+  <a href="../legal/copyright.html">Copyright / DMCA</a>
+  <a href="../legal/contact.html">Contact</a>
+</div>
+
+</footer>
+
+</body>
+</html>

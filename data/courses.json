@@ -1,0 +1,32 @@
+[
+  {
+    "id": "source-literacy-101",
+    "title": "Source Literacy 101",
+    "category": "research",
+    "summary": "Learn how to separate fact, claim, interpretation, theory, speculation, and open questions.",
+    "lessons": [
+      "Fact vs claim",
+      "Primary vs secondary sources",
+      "How to write source notes",
+      "How to verify one claim"
+    ]
+  },
+  {
+    "id": "podcast-to-knowledge-map",
+    "title": "Podcast to Knowledge Map",
+    "category": "learning",
+    "summary": "Turn long-form interviews into people, books, concepts, timeline events, and globe nodes.",
+    "lessons": [
+      "Extract topics",
+      "Build connections",
+      "Create reflection prompts",
+      "Publish an Atlas entry"
+    ]
+  },
+  {
+    "id": "globe-history-lab",
+    "title": "Globe History Lab",
+    "category": "exploration",
+    "summary": "Use the 3D globe and timeline to understand history through place."
+  }
+]

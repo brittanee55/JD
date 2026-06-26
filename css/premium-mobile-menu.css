@@ -1,0 +1,310 @@
+
+/* =========================================================
+   JD NAV + PREMIUM MOBILE MENU
+   Desktop: JD + normal links + login, no hamburger/dropdown.
+   Mobile: JD + login + one slide-out menu only.
+   ========================================================= */
+
+.hka-premium-menu-button,
+.hka-premium-menu-overlay,
+.hka-premium-menu-panel {
+  display: none;
+}
+
+/* Keep brand compact as JD */
+.logo span,
+.julian-logo span,
+.jd-splash-logo span,
+.jd-one-line-logo span,
+.same-as-home-logo span,
+.fixed-inner-logo span,
+.universal-red-logo span,
+.top-left-jd-logo span,
+.navbar-brand span {
+  text-transform: uppercase !important;
+}
+
+/* DESKTOP: normal navbar links only, no dropdown/hamburger */
+@media (min-width: 769px) {
+  .hka-premium-menu-button,
+  .hka-premium-menu-overlay,
+  .hka-premium-menu-panel,
+  .menu-btn,
+  .mobile-menu-toggle,
+  .hka-mobile-menu-toggle,
+  .hamburger {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .nav-links,
+  .jd-splash-links,
+  .jd-one-line-links,
+  .same-as-home-links,
+  .fixed-inner-links,
+  .universal-red-links,
+  .screenshot-home-links {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .jd-splash-navbar::after,
+  .navbar::after,
+  nav::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+
+/* MOBILE: hide normal nav links; show one premium menu */
+@media (max-width: 768px) {
+  body.hka-menu-open {
+    overflow: hidden !important;
+  }
+
+  .menu-btn,
+  .mobile-menu-toggle,
+  .hka-mobile-menu-toggle,
+  .hamburger,
+  .jd-splash-navbar::after,
+  .navbar::after,
+  nav::after {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    content: none !important;
+  }
+
+  .nav-links,
+  .jd-splash-links,
+  .jd-one-line-links,
+  .same-as-home-links,
+  .fixed-inner-links,
+  .universal-red-links,
+  .screenshot-home-links {
+    display: none !important;
+  }
+
+  .navbar,
+  .jd-splash-navbar,
+  .jd-one-line-navbar,
+  .same-as-home-navbar,
+  .fixed-inner-navbar,
+  .universal-red-navbar {
+    display: grid !important;
+    grid-template-columns: auto 1fr auto auto !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .logo span,
+  .julian-logo span,
+  .jd-splash-logo span,
+  .jd-one-line-logo span,
+  .same-as-home-logo span,
+  .fixed-inner-logo span,
+  .universal-red-logo span,
+  .top-left-jd-logo span,
+  .navbar-brand span {
+    font-size: 22px !important;
+    letter-spacing: 3px !important;
+    max-width: none !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: nowrap !important;
+  }
+
+  .login-signup-btn,
+  .jd-splash-login,
+  .same-as-home-login,
+  .fixed-inner-login,
+  .universal-red-login {
+    display: inline-flex !important;
+    justify-self: end !important;
+    white-space: nowrap !important;
+  }
+
+  .hka-premium-menu-button {
+    display: inline-grid !important;
+    place-items: center !important;
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(217, 164, 65, 0.46) !important;
+    background:
+      radial-gradient(circle at 50% 30%, rgba(217,164,65,.13), transparent 55%),
+      rgba(0, 0, 0, 0.28) !important;
+    color: #d9a441 !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+    box-shadow: 0 0 26px rgba(217, 164, 65, 0.11) !important;
+    z-index: 100002 !important;
+    justify-self: end !important;
+  }
+
+  .hka-premium-menu-overlay {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 100000 !important;
+    display: block !important;
+    background: rgba(0, 0, 0, 0.52) !important;
+    backdrop-filter: blur(5px) !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 240ms ease !important;
+  }
+
+  .hka-premium-menu-panel {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    z-index: 100001 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: min(86vw, 370px) !important;
+    height: 100svh !important;
+    padding: 26px 20px 28px !important;
+    color: #f7f1e5 !important;
+    background:
+      radial-gradient(circle at 70% 15%, rgba(97, 214, 162, 0.10), transparent 30%),
+      radial-gradient(circle at 40% 38%, rgba(217, 164, 65, 0.09), transparent 36%),
+      linear-gradient(180deg, rgba(3, 10, 9, 0.99), rgba(1, 6, 5, 0.99)) !important;
+    border-left: 1px solid rgba(217, 164, 65, 0.32) !important;
+    box-shadow: -28px 0 80px rgba(0, 0, 0, 0.55) !important;
+    transform: translateX(105%) !important;
+    transition: transform 280ms cubic-bezier(.2,.8,.2,1) !important;
+    overflow-y: auto !important;
+  }
+
+  .hka-menu-open .hka-premium-menu-overlay {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  .hka-menu-open .hka-premium-menu-panel {
+    transform: translateX(0) !important;
+  }
+
+  .hka-premium-menu-head {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 14px !important;
+    padding-bottom: 20px !important;
+    border-bottom: 1px solid rgba(217, 164, 65, 0.18) !important;
+  }
+
+  .hka-premium-menu-brand {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    color: #f7f1e5 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 3px !important;
+    font-size: 19px !important;
+  }
+
+  .hka-premium-menu-brand img {
+    width: 38px !important;
+    height: 38px !important;
+    object-fit: contain !important;
+  }
+
+  .hka-premium-menu-close {
+    width: 42px !important;
+    height: 42px !important;
+    display: grid !important;
+    place-items: center !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(217, 164, 65, 0.34) !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    color: #d9a441 !important;
+    font-size: 25px !important;
+    cursor: pointer !important;
+  }
+
+  .hka-premium-menu-links {
+    display: grid !important;
+    gap: 10px !important;
+    padding: 22px 0 !important;
+  }
+
+  .hka-premium-menu-links a {
+    min-height: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 14px !important;
+    padding: 12px 14px !important;
+    border-radius: 14px !important;
+    color: #f1d083 !important;
+    text-decoration: none !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    background: rgba(255, 255, 255, 0.025) !important;
+    border: 1px solid rgba(217, 164, 65, 0.12) !important;
+  }
+
+  .hka-premium-menu-links a::after {
+    content: "→";
+    opacity: 0.7;
+  }
+
+  .hka-premium-menu-login {
+    margin-top: auto !important;
+    min-height: 54px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 12px 14px !important;
+    border-radius: 14px !important;
+    color: #ffffff !important;
+    background: linear-gradient(135deg, rgba(13,123,88,.92), rgba(5,66,50,.92)) !important;
+    border: 1px solid rgba(97, 214, 162, 0.42) !important;
+    text-decoration: none !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    box-shadow: 0 16px 38px rgba(0,0,0,.28) !important;
+  }
+
+  .hka-premium-menu-note {
+    margin: 14px auto 0 !important;
+    color: rgba(247, 241, 229, 0.52) !important;
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .login-signup-btn,
+  .jd-splash-login,
+  .same-as-home-login,
+  .fixed-inner-login,
+  .universal-red-login {
+    font-size: 14px !important;
+    padding: 11px 12px !important;
+  }
+
+  .hka-premium-menu-button {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    font-size: 21px !important;
+  }
+
+  .hka-premium-menu-panel {
+    width: min(90vw, 340px) !important;
+    padding: 22px 16px 24px !important;
+  }
+}

@@ -1,0 +1,909 @@
+/* =========================================================
+   GLOBAL.CSS
+   Used on: ALL HTML pages
+   Purpose: Base colors, reset, typography, shared buttons/cards
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #07100d;
+  --bg-deep: #020504;
+  --panel: rgba(8, 20, 17, 0.88);
+  --panel-soft: rgba(255, 255, 255, 0.045);
+  --panel-glow: rgba(14, 88, 64, 0.22);
+  --text: #f5ead8;
+  --muted: #c7b89f;
+  --gold: #d9a441;
+  --gold-light: #f1d083;
+  --green: #61d6a2;
+  --green-dark: #0f5d43;
+  --border: rgba(217, 164, 65, 0.28);
+  --border-soft: rgba(255, 255, 255, 0.1);
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    linear-gradient(rgba(2, 5, 4, 0.88), rgba(3, 13, 10, 0.96)),
+    url("../assets/images/old-map-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  color: var(--muted);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+main {
+  overflow: hidden;
+}
+
+.section {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  letter-spacing: 0.4px;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #0f6b4f, #0a4f3d);
+  color: #fff8e9;
+  border-color: rgba(97, 214, 162, 0.5);
+  box-shadow: 0 16px 35px rgba(15, 107, 79, 0.25);
+}
+
+.btn.secondary {
+  background: rgba(0, 0, 0, 0.22);
+  color: var(--gold-light);
+  border-color: rgba(217, 164, 65, 0.55);
+}
+
+.btn.secondary:hover {
+  background: rgba(217, 164, 65, 0.12);
+}
+
+.card,
+.featured-card,
+.preview-card,
+.learning-card,
+.tree-wing,
+.layer-output,
+.newsletter-strip {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.055), rgba(255,255,255,0.015)),
+    rgba(2, 10, 8, 0.75);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.card {
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.card h3 {
+  color: var(--gold-light);
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.card-grid,
+.preview-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.card-grid.three,
+.preview-grid.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.section-title-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.section-title-row h2 {
+  margin: 0;
+}
+
+.section-title-row a,
+.read-more {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.meta {
+  color: var(--green);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.8px;
+}
+
+code {
+  color: var(--green);
+}
+
+::selection {
+  background: rgba(217, 164, 65, 0.35);
+}
+
+/* FORCE HALF-SIZE RED NAVBAR SYMBOL ON INNER PAGES */
+.navbar-red-symbol-half,
+.top-left-jd-logo img.navbar-red-symbol-half,
+.same-as-home-logo img.navbar-red-symbol-half,
+.fixed-inner-logo img.navbar-red-symbol-half,
+.universal-red-logo img.navbar-red-symbol-half,
+.logo img.navbar-red-symbol-half,
+header nav img.navbar-red-symbol-half {
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px !important;
+  max-width: 26px !important;
+  min-height: 26px !important;
+  max-height: 26px !important;
+  object-fit: contain !important;
+  display: inline-block !important;
+}
+
+.top-left-jd-logo,
+.same-as-home-logo,
+.fixed-inner-logo,
+.universal-red-logo {
+  gap: 10px !important;
+}
+
+
+/* EXACT JULIAN DOREY NAV LOGO SIZE - REQUESTED */
+.jd-exact-logo,
+header nav a.jd-exact-logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 18px !important;
+  min-width: 320px !important;
+  height: 82px !important;
+  overflow: visible !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+}
+.jd-exact-symbol,
+.jd-exact-logo img.jd-exact-symbol,
+header nav img.jd-exact-symbol {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  max-width: 44px !important;
+  min-height: 44px !important;
+  max-height: 44px !important;
+  object-fit: contain !important;
+  display: block !important;
+  transform: none !important;
+  filter: drop-shadow(0 0 10px rgba(179, 32, 37, 0.35)) !important;
+}
+.jd-exact-logo span,
+header nav a.jd-exact-logo span {
+  color: #ffffff !important;
+  font-size: 26px !important;
+  line-height: 1 !important;
+  letter-spacing: 6px !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  max-width: none !important;
+  text-shadow: 0 0 14px rgba(255,255,255,0.18) !important;
+}
+
+
+/* =========================================================
+   JULIAN DOREY ONE-LINE NAVBAR
+   For: Episodes, People, Books, Concepts, World Map,
+   Timeline, Learning, Journal, AI Chat, Community.
+   ========================================================= */
+
+.jd-one-line-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10000 !important;
+  background: rgba(1, 7, 7, 0.96) !important;
+  border-bottom: 1px solid rgba(217, 164, 65, 0.16) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.jd-one-line-navbar {
+  width: min(1840px, calc(100% - 36px)) !important;
+  height: 72px !important;
+  min-height: 72px !important;
+  margin: 0 auto !important;
+  display: grid !important;
+  grid-template-columns: 265px minmax(0, 1fr) 190px !important;
+  align-items: center !important;
+  gap: 18px !important;
+}
+
+.jd-one-line-logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  min-width: 0 !important;
+  height: 72px !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  overflow: visible !important;
+}
+
+.jd-one-line-symbol {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  max-width: 44px !important;
+  min-height: 44px !important;
+  max-height: 44px !important;
+  display: block !important;
+  object-fit: contain !important;
+  transform: none !important;
+  filter: drop-shadow(0 0 10px rgba(179, 32, 37, 0.35)) !important;
+}
+
+.jd-one-line-logo span {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+  letter-spacing: 4.5px !important;
+  font-weight: 400 !important;
+  white-space: nowrap !important;
+  text-shadow: 0 0 14px rgba(255, 255, 255, 0.16) !important;
+}
+
+.jd-one-line-links {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: clamp(10px, 1.2vw, 20px) !important;
+  flex-wrap: nowrap !important;
+  min-width: 0 !important;
+  overflow: visible !important;
+}
+
+.jd-one-line-links a {
+  color: #f1d083 !important;
+  font-size: clamp(10px, 0.78vw, 13px) !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+}
+
+.jd-one-line-links a:hover,
+.jd-one-line-links a.active-link {
+  color: #61d6a2 !important;
+  text-shadow: 0 0 14px rgba(97, 214, 162, 0.32) !important;
+}
+
+.jd-one-line-login {
+  justify-self: end !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  color: #f4efe8 !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+  text-decoration: none !important;
+}
+
+.jd-one-line-login .login-icon {
+  color: #f4efe8 !important;
+  font-size: 14px !important;
+}
+
+@media (max-width: 1400px) {
+  .jd-one-line-navbar {
+    grid-template-columns: 230px minmax(0, 1fr) 160px !important;
+    gap: 10px !important;
+  }
+
+  .jd-one-line-logo span {
+    font-size: 17px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .jd-one-line-symbol {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    max-width: 38px !important;
+    min-height: 38px !important;
+    max-height: 38px !important;
+  }
+
+  .jd-one-line-links {
+    gap: 9px !important;
+  }
+
+  .jd-one-line-links a {
+    font-size: 10px !important;
+  }
+
+  .jd-one-line-login {
+    font-size: 11px !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .jd-one-line-navbar {
+    height: auto !important;
+    min-height: 72px !important;
+    grid-template-columns: 1fr auto !important;
+    padding: 12px 0 !important;
+  }
+
+  .jd-one-line-links {
+    grid-column: 1 / -1 !important;
+    order: 3 !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    padding: 8px 0 4px !important;
+  }
+}
+
+
+.legal-report-strip {
+  width: min(1180px, calc(100% - 40px));
+  margin: 40px auto;
+  border: 1px solid rgba(217,164,65,.22);
+  background: rgba(0,0,0,.24);
+  border-radius: 14px;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+.legal-report-strip p { margin: 0; color: #c8bfae; }
+.legal-report-strip a { color: #61d6a2; font-weight: 800; text-decoration: none; }
+
+
+/* =========================================================
+   HKA SCREENSHOT-MATCH FOOTER
+   Applies to Episodes, People, Books, Concepts, World Map,
+   Timeline, Learning, Journal, AI Chat, and Community.
+   ========================================================= */
+
+.hka-screenshot-footer {
+  width: min(1480px, calc(100% - 64px)) !important;
+  margin: 70px auto 0 !important;
+  padding: 30px 0 40px !important;
+  background: transparent !important;
+  border-top: 1px solid rgba(217, 164, 65, 0.18) !important;
+  color: #f1d083 !important;
+}
+
+.hka-screenshot-footer .hka-footer-top {
+  min-height: 104px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 48px !important;
+  padding: 0 0 36px !important;
+  border-bottom: 1px solid rgba(217, 164, 65, 0.18) !important;
+}
+
+.hka-screenshot-footer .hka-footer-top p {
+  margin: 18px 0 0 !important;
+  color: #f1d083 !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+  font-weight: 600 !important;
+}
+
+.hka-screenshot-footer .hka-footer-main-links {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  gap: 28px !important;
+  flex-wrap: wrap !important;
+}
+
+.hka-screenshot-footer a {
+  color: #f1d083 !important;
+  text-decoration: none !important;
+  transition: color .2s ease, text-shadow .2s ease !important;
+}
+
+.hka-screenshot-footer a:hover {
+  color: #61d6a2 !important;
+  text-shadow: 0 0 14px rgba(97, 214, 162, 0.22) !important;
+}
+
+.hka-screenshot-footer .hka-footer-main-links a {
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+}
+
+.hka-screenshot-footer .hka-footer-legal-links {
+  padding-top: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 22px !important;
+  flex-wrap: wrap !important;
+}
+
+.hka-screenshot-footer .hka-footer-legal-links a {
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 900px) {
+  .hka-screenshot-footer {
+    width: min(100% - 32px, 1480px) !important;
+    margin-top: 44px !important;
+    padding: 26px 0 32px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-top {
+    display: grid !important;
+    gap: 18px !important;
+    min-height: auto !important;
+    padding-bottom: 24px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-main-links {
+    justify-content: flex-start !important;
+    gap: 10px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-top p,
+  .hka-screenshot-footer .hka-footer-main-links a {
+    font-size: 14px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-legal-links {
+    justify-content: flex-start !important;
+    gap: 14px !important;
+    padding-top: 22px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-legal-links a {
+    font-size: 11px !important;
+  }
+}
+
+
+/* =========================================================
+   HKA FOOTER REFINED LAYOUT - KEEP CURRENT FONT SIZES
+   Matches screenshot spacing/structure while preserving text scale.
+   ========================================================= */
+
+.hka-footer-refined-layout {
+  width: min(1480px, calc(100% - 64px)) !important;
+  margin: 70px auto 0 !important;
+  padding: 30px 0 40px !important;
+  background: transparent !important;
+  border-top: 1px solid rgba(217, 164, 65, 0.18) !important;
+  color: #f1d083 !important;
+}
+
+.hka-footer-refined-layout .hka-footer-top {
+  min-height: 104px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 48px !important;
+  padding: 0 0 36px !important;
+  border-bottom: 1px solid rgba(217, 164, 65, 0.18) !important;
+}
+
+.hka-footer-refined-layout .hka-footer-top p {
+  margin: 18px 0 0 !important;
+  color: #f1d083 !important;
+  line-height: 1.45 !important;
+}
+
+.hka-footer-refined-layout .hka-footer-main-links {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  gap: 28px !important;
+  flex-wrap: wrap !important;
+}
+
+.hka-footer-refined-layout a {
+  color: #f1d083 !important;
+  text-decoration: none !important;
+  transition: color .2s ease, text-shadow .2s ease !important;
+}
+
+.hka-footer-refined-layout a:hover {
+  color: #61d6a2 !important;
+  text-shadow: 0 0 14px rgba(97, 214, 162, 0.22) !important;
+}
+
+.hka-footer-refined-layout .hka-footer-main-links a {
+  line-height: 1.2 !important;
+}
+
+.hka-footer-refined-layout .hka-footer-legal-links {
+  padding-top: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 22px !important;
+  flex-wrap: wrap !important;
+}
+
+.hka-footer-refined-layout .hka-footer-legal-links a {
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 900px) {
+  .hka-footer-refined-layout {
+    width: min(100% - 32px, 1480px) !important;
+    margin-top: 44px !important;
+    padding: 26px 0 32px !important;
+  }
+
+  .hka-footer-refined-layout .hka-footer-top {
+    display: grid !important;
+    gap: 18px !important;
+    min-height: auto !important;
+    padding-bottom: 24px !important;
+  }
+
+  .hka-footer-refined-layout .hka-footer-main-links {
+    justify-content: flex-start !important;
+    gap: 10px !important;
+  }
+
+  .hka-footer-refined-layout .hka-footer-legal-links {
+    justify-content: flex-start !important;
+    gap: 14px !important;
+    padding-top: 22px !important;
+  }
+}
+
+
+/* =========================================================
+   POLISHED REPORT CONTENT STRIP
+   Applies to Episodes, People, Books, Concepts, World Map,
+   Timeline, Learning, Journal, AI Chat, and Community.
+   ========================================================= */
+
+.polished-report-strip {
+  width: min(1180px, calc(100% - 48px)) !important;
+  margin: 52px auto 34px !important;
+  padding: 18px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 22px !important;
+  border: 1px solid rgba(217, 164, 65, 0.22) !important;
+  border-radius: 16px !important;
+  background:
+    linear-gradient(135deg, rgba(217, 164, 65, 0.08), rgba(97, 214, 162, 0.035)),
+    rgba(0, 0, 0, 0.22) !important;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.22) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.polished-report-strip .report-copy {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  min-width: 0 !important;
+}
+
+.polished-report-strip .report-icon {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  color: #61d6a2 !important;
+  border: 1px solid rgba(97, 214, 162, 0.34) !important;
+  background: rgba(97, 214, 162, 0.08) !important;
+  font-size: 16px !important;
+}
+
+.polished-report-strip h3 {
+  margin: 0 0 4px !important;
+  color: #f7f1e5 !important;
+  font-size: 15px !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.polished-report-strip p {
+  margin: 0 !important;
+  color: rgba(247, 241, 229, 0.72) !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+}
+
+.polished-report-strip .report-button {
+  flex: 0 0 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px 14px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(217, 164, 65, 0.38) !important;
+  color: #f1d083 !important;
+  background: rgba(0, 0, 0, 0.22) !important;
+  text-decoration: none !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  transition: color .2s ease, border-color .2s ease, transform .2s ease, background .2s ease !important;
+}
+
+.polished-report-strip .report-button:hover {
+  color: #ffffff !important;
+  border-color: rgba(97, 214, 162, 0.55) !important;
+  background: rgba(97, 214, 162, 0.12) !important;
+  transform: translateY(-1px) !important;
+}
+
+@media (max-width: 760px) {
+  .polished-report-strip {
+    display: grid !important;
+    margin: 36px auto 24px !important;
+    padding: 16px !important;
+  }
+
+  .polished-report-strip .report-button {
+    width: 100% !important;
+  }
+}
+
+
+/* HOMEPAGE NAVBAR LOGO GAP UPDATE */
+.home-logo-gap-16,
+.jd-splash-logo.home-logo-gap-16,
+.jd-one-line-logo.home-logo-gap-16,
+.screenshot-home-navbar .home-logo-gap-16,
+.home-page-navbar .home-logo-gap-16,
+header nav a.home-logo-gap-16 {
+  gap: 10px !important;
+}
+
+
+/* =========================================================
+   CENTER "EXPLORE THE ATLAS THROUGH LAYERS" SECTION
+   Centers the icon layer row and description box.
+   ========================================================= */
+
+.layers-nav,
+.explore-layers-nav,
+.layer-icons,
+.layers-grid,
+.atlas-layers,
+.atlas-layer-grid,
+.episode-layers,
+.episode-layer-grid,
+.episode-tabs,
+.layer-tabs,
+.episode-detail-tabs,
+.atlas-through-layers,
+.explore-atlas-layers {
+  width: fit-content !important;
+  max-width: min(1180px, calc(100% - 48px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  flex-wrap: wrap !important;
+  gap: 44px !important;
+  text-align: center !important;
+}
+
+.layers-nav > *,
+.explore-layers-nav > *,
+.layer-icons > *,
+.layers-grid > *,
+.atlas-layers > *,
+.atlas-layer-grid > *,
+.episode-layers > *,
+.episode-layer-grid > *,
+.episode-tabs > *,
+.layer-tabs > *,
+.episode-detail-tabs > *,
+.atlas-through-layers > *,
+.explore-atlas-layers > * {
+  flex: 0 0 auto !important;
+  width: 92px !important;
+  max-width: 92px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: center !important;
+}
+
+.layers-nav img,
+.explore-layers-nav img,
+.layer-icons img,
+.layers-grid img,
+.atlas-layers img,
+.atlas-layer-grid img,
+.episode-layers img,
+.episode-layer-grid img,
+.episode-tabs img,
+.layer-tabs img,
+.episode-detail-tabs img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.layers-description,
+.layer-description,
+.layer-info-box,
+.atlas-layer-description,
+.episode-layer-description,
+.layer-detail-box,
+.tab-description,
+#layerDescription,
+#atlasLayerDescription {
+  width: min(85%, 1100px) !important;
+  margin: 36px auto 0 !important;
+  text-align: center !important;
+}
+
+/* Center heading for this section */
+.layers-section h2,
+.layers-section .eyebrow,
+.atlas-layers-section h2,
+.atlas-layers-section .eyebrow,
+.episode-layers-section h2,
+.episode-layers-section .eyebrow {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 768px) {
+  .layers-nav,
+  .explore-layers-nav,
+  .layer-icons,
+  .layers-grid,
+  .atlas-layers,
+  .atlas-layer-grid,
+  .episode-layers,
+  .episode-layer-grid,
+  .episode-tabs,
+  .layer-tabs,
+  .episode-detail-tabs,
+  .atlas-through-layers,
+  .explore-atlas-layers {
+    width: min(100% - 32px, 420px) !important;
+    max-width: min(100% - 32px, 420px) !important;
+    gap: 18px !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(120px, 1fr)) !important;
+    justify-items: center !important;
+    align-items: start !important;
+  }
+
+  .layers-nav > *,
+  .explore-layers-nav > *,
+  .layer-icons > *,
+  .layers-grid > *,
+  .atlas-layers > *,
+  .atlas-layer-grid > *,
+  .episode-layers > *,
+  .episode-layer-grid > *,
+  .episode-tabs > *,
+  .layer-tabs > *,
+  .episode-detail-tabs > *,
+  .atlas-through-layers > *,
+  .explore-atlas-layers > * {
+    width: 100% !important;
+    max-width: 160px !important;
+  }
+
+  .layers-description,
+  .layer-description,
+  .layer-info-box,
+  .atlas-layer-description,
+  .episode-layer-description,
+  .layer-detail-box,
+  .tab-description,
+  #layerDescription,
+  #atlasLayerDescription {
+    width: min(100% - 32px, 420px) !important;
+    margin-top: 28px !important;
+  }
+}
+
+
+/* REMOVE DUPLICATE LAYERS CLEANUP */
+.layers-section + .section,
+.desktop-layer-panel + .section,
+.mobile-atlas-portal + .section {
+  margin-top: 0 !important;
+}
+
+.layers-section {
+  margin-bottom: 34px !important;
+}

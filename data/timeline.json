@@ -1,0 +1,218 @@
+[
+  {
+    "id": "ancient-egyptian-civilization",
+    "title": "Ancient Egyptian Civilization",
+    "year": -3100,
+    "era": "Ancient World",
+    "category": "history",
+    "status": "documented",
+    "summary": "Formation of one of the world's earliest large-scale civilizations.",
+    "locations": [
+      "egypt"
+    ],
+    "people": [],
+    "books": [
+      "ancient-civilization-reader"
+    ],
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "concepts": [
+      "civilization",
+      "symbolism",
+      "mythology"
+    ]
+  },
+
+  {
+    "id": "ancient-greek-thought",
+    "title": "Rise of Greek Philosophy",
+    "year": -500,
+    "era": "Ancient World",
+    "category": "philosophy",
+    "status": "documented",
+    "summary": "Development of philosophy, logic, inquiry, and democratic thought.",
+    "locations": [
+      "greece"
+    ],
+    "people": [
+      "socrates",
+      "plato"
+    ],
+    "books": [
+      "greek-philosophy-reader"
+    ],
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "concepts": [
+      "philosophy",
+      "knowledge",
+      "meaning"
+    ]
+  },
+
+  {
+    "id": "printing-press-revolution",
+    "title": "Printing Press Revolution",
+    "year": 1440,
+    "era": "Early Modern",
+    "category": "media",
+    "status": "documented",
+    "summary": "Mass distribution of information transforms knowledge sharing.",
+    "locations": [
+      "london"
+    ],
+    "people": [],
+    "books": [],
+    "episodes": [
+      "media-narratives-public-opinion"
+    ],
+    "concepts": [
+      "media-systems",
+      "public-opinion"
+    ]
+  },
+
+  {
+    "id": "cia-established-1947",
+    "title": "CIA Established",
+    "year": 1947,
+    "era": "Modern Era",
+    "category": "intelligence",
+    "status": "documented",
+    "summary": "Creation of the Central Intelligence Agency.",
+    "locations": [
+      "washington-dc",
+      "langley"
+    ],
+    "people": [
+      "allen-dulles"
+    ],
+    "books": [
+      "legacy-of-ashes"
+    ],
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "concepts": [
+      "intelligence-agencies",
+      "oversight"
+    ]
+  },
+
+  {
+    "id": "cold-war-intelligence",
+    "title": "Cold War Intelligence Era",
+    "year": 1947,
+    "endYear": 1991,
+    "era": "Cold War",
+    "category": "intelligence",
+    "status": "documented",
+    "summary": "Global intelligence competition between East and West.",
+    "locations": [
+      "washington-dc",
+      "langley",
+      "berlin",
+      "london"
+    ],
+    "people": [
+      "allen-dulles",
+      "philip-agee"
+    ],
+    "books": [
+      "legacy-of-ashes",
+      "the-spy-and-the-traitor"
+    ],
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "concepts": [
+      "cold-war",
+      "espionage",
+      "covert-action"
+    ]
+  },
+
+  {
+    "id": "internet-public-infrastructure",
+    "title": "Internet Information Age",
+    "year": 1990,
+    "era": "Digital Era",
+    "category": "media",
+    "status": "documented",
+    "summary": "Information becomes globally accessible at unprecedented scale.",
+    "locations": [
+      "new-york",
+      "london"
+    ],
+    "people": [
+      "noam-chomsky"
+    ],
+    "books": [
+      "manufacturing-consent"
+    ],
+    "episodes": [
+      "media-narratives-public-opinion"
+    ],
+    "concepts": [
+      "media-systems",
+      "public-opinion",
+      "source-literacy"
+    ]
+  },
+
+  {
+    "id": "trauma-research-expands",
+    "title": "Expansion of Trauma Research",
+    "year": 2000,
+    "era": "Modern Psychology",
+    "category": "psychology",
+    "status": "documented",
+    "summary": "Growing understanding of trauma, memory, and nervous system regulation.",
+    "locations": [
+      "california"
+    ],
+    "people": [
+      "bessel-van-der-kolk"
+    ],
+    "books": [
+      "the-body-keeps-the-score"
+    ],
+    "episodes": [
+      "trauma-memory-nervous-system"
+    ],
+    "concepts": [
+      "trauma",
+      "memory",
+      "nervous-system-regulation"
+    ]
+  },
+
+  {
+    "id": "consciousness-traditions",
+    "title": "Development of Consciousness Traditions",
+    "year": -500,
+    "era": "Ancient Spirituality",
+    "category": "spirituality",
+    "status": "open-question",
+    "summary": "Development of contemplative traditions focused on awareness and meaning.",
+    "locations": [
+      "india"
+    ],
+    "people": [
+      "buddha"
+    ],
+    "books": [
+      "consciousness-reality-reader"
+    ],
+    "episodes": [
+      "consciousness-meaning-reality"
+    ],
+    "concepts": [
+      "consciousness",
+      "awareness",
+      "meaning"
+    ]
+  }
+]

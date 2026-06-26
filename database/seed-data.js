@@ -1,0 +1,1 @@
+// Future Firebase seed script placeholder. For now, data lives in /data/*.json.

@@ -1,0 +1,1 @@
+async function atlasDemoAnswer(question){const data=await window.AtlasAPI.loadAll('../data/');const hits=window.AtlasAPI.search(data,question).slice(0,8);return hits.map(h=>`${h.type}: ${h.item.title||h.item.name||h.item.id}`).join('\n')||'No local Atlas matches yet.';}

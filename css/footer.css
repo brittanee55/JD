@@ -1,0 +1,386 @@
+/* =========================================================
+   FOOTER.CSS
+   Used on: ALL HTML pages
+   Purpose: Footer layout and links
+   ========================================================= */
+
+.footer {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 28px;
+  border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(4, 1fr);
+  gap: 34px;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.footer-logo img {
+  width: 42px;
+  height: 42px;
+}
+
+.footer h4 {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+
+.footer a {
+  display: block;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  color: var(--green);
+}
+
+.footer-bottom {
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-soft);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--muted);
+}
+
+.footer-bottom div {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-legal-center {
+  border-top: 1px solid rgba(217,164,65,.16);
+  margin-top: 28px;
+  padding-top: 20px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-legal-center a {
+  color: #f1d083;
+  font-size: 13px;
+  text-decoration: none;
+}
+.footer-legal-center a:hover {
+  color: #61d6a2;
+}
+
+
+/* =========================================================
+   HKA SCREENSHOT-MATCH FOOTER
+   Applies to Episodes, People, Books, Concepts, World Map,
+   Timeline, Learning, Journal, AI Chat, and Community.
+   ========================================================= */
+
+.hka-screenshot-footer {
+  width: min(1480px, calc(100% - 64px)) !important;
+  margin: 70px auto 0 !important;
+  padding: 30px 0 40px !important;
+  background: transparent !important;
+  border-top: 1px solid rgba(217, 164, 65, 0.18) !important;
+  color: #f1d083 !important;
+}
+
+.hka-screenshot-footer .hka-footer-top {
+  min-height: 104px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 48px !important;
+  padding: 0 0 36px !important;
+  border-bottom: 1px solid rgba(217, 164, 65, 0.18) !important;
+}
+
+.hka-screenshot-footer .hka-footer-top p {
+  margin: 18px 0 0 !important;
+  color: #f1d083 !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+  font-weight: 600 !important;
+}
+
+.hka-screenshot-footer .hka-footer-main-links {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  gap: 28px !important;
+  flex-wrap: wrap !important;
+}
+
+.hka-screenshot-footer a {
+  color: #f1d083 !important;
+  text-decoration: none !important;
+  transition: color .2s ease, text-shadow .2s ease !important;
+}
+
+.hka-screenshot-footer a:hover {
+  color: #61d6a2 !important;
+  text-shadow: 0 0 14px rgba(97, 214, 162, 0.22) !important;
+}
+
+.hka-screenshot-footer .hka-footer-main-links a {
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+}
+
+.hka-screenshot-footer .hka-footer-legal-links {
+  padding-top: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 22px !important;
+  flex-wrap: wrap !important;
+}
+
+.hka-screenshot-footer .hka-footer-legal-links a {
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 900px) {
+  .hka-screenshot-footer {
+    width: min(100% - 32px, 1480px) !important;
+    margin-top: 44px !important;
+    padding: 26px 0 32px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-top {
+    display: grid !important;
+    gap: 18px !important;
+    min-height: auto !important;
+    padding-bottom: 24px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-main-links {
+    justify-content: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-top p,
+  .hka-screenshot-footer .hka-footer-main-links a {
+    font-size: 14px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-legal-links {
+    justify-content: flex-start !important;
+    gap: 14px !important;
+    padding-top: 22px !important;
+  }
+
+  .hka-screenshot-footer .hka-footer-legal-links a {
+    font-size: 11px !important;
+  }
+}
+
+
+/* =========================================================
+   HKA FOOTER REFINED LAYOUT - KEEP CURRENT FONT SIZES
+   Matches screenshot spacing/structure while preserving text scale.
+   ========================================================= */
+
+.hka-footer-refined-layout {
+  width: min(1480px, calc(100% - 64px)) !important;
+  margin: 70px auto 0 !important;
+  padding: 30px 0 40px !important;
+  background: transparent !important;
+  border-top: 1px solid rgba(217, 164, 65, 0.18) !important;
+  color: #f1d083 !important;
+}
+
+.hka-footer-refined-layout .hka-footer-top {
+  min-height: 104px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  gap: 48px !important;
+  padding: 0 0 36px !important;
+  border-bottom: 1px solid rgba(217, 164, 65, 0.18) !important;
+}
+
+.hka-footer-refined-layout .hka-footer-top p {
+  margin: 18px 0 0 !important;
+  color: #f1d083 !important;
+  line-height: 1.45 !important;
+}
+
+.hka-footer-refined-layout .hka-footer-main-links {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+  gap: 28px !important;
+  flex-wrap: wrap !important;
+}
+
+.hka-footer-refined-layout a {
+  color: #f1d083 !important;
+  text-decoration: none !important;
+  transition: color .2s ease, text-shadow .2s ease !important;
+}
+
+.hka-footer-refined-layout a:hover {
+  color: #61d6a2 !important;
+  text-shadow: 0 0 14px rgba(97, 214, 162, 0.22) !important;
+}
+
+.hka-footer-refined-layout .hka-footer-main-links a {
+  line-height: 1.2 !important;
+}
+
+.hka-footer-refined-layout .hka-footer-legal-links {
+  padding-top: 30px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 22px !important;
+  flex-wrap: wrap !important;
+}
+
+.hka-footer-refined-layout .hka-footer-legal-links a {
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 900px) {
+  .hka-footer-refined-layout {
+    width: min(100% - 32px, 1480px) !important;
+    margin-top: 44px !important;
+    padding: 26px 0 32px !important;
+  }
+
+  .hka-footer-refined-layout .hka-footer-top {
+    display: grid !important;
+    gap: 18px !important;
+    min-height: auto !important;
+    padding-bottom: 24px !important;
+  }
+
+  .hka-footer-refined-layout .hka-footer-main-links {
+    justify-content: flex-start !important;
+    gap: 16px !important;
+  }
+
+  .hka-footer-refined-layout .hka-footer-legal-links {
+    justify-content: flex-start !important;
+    gap: 14px !important;
+    padding-top: 22px !important;
+  }
+}
+
+
+/* =========================================================
+   POLISHED REPORT CONTENT STRIP
+   Applies to Episodes, People, Books, Concepts, World Map,
+   Timeline, Learning, Journal, AI Chat, and Community.
+   ========================================================= */
+
+.polished-report-strip {
+  width: min(1180px, calc(100% - 48px)) !important;
+  margin: 52px auto 34px !important;
+  padding: 18px 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 22px !important;
+  border: 1px solid rgba(217, 164, 65, 0.22) !important;
+  border-radius: 16px !important;
+  background:
+    linear-gradient(135deg, rgba(217, 164, 65, 0.08), rgba(97, 214, 162, 0.035)),
+    rgba(0, 0, 0, 0.22) !important;
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.22) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+.polished-report-strip .report-copy {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+  min-width: 0 !important;
+}
+
+.polished-report-strip .report-icon {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  color: #61d6a2 !important;
+  border: 1px solid rgba(97, 214, 162, 0.34) !important;
+  background: rgba(97, 214, 162, 0.08) !important;
+  font-size: 16px !important;
+}
+
+.polished-report-strip h3 {
+  margin: 0 0 4px !important;
+  color: #f7f1e5 !important;
+  font-size: 15px !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+}
+
+.polished-report-strip p {
+  margin: 0 !important;
+  color: rgba(247, 241, 229, 0.72) !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+}
+
+.polished-report-strip .report-button {
+  flex: 0 0 auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px 14px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(217, 164, 65, 0.38) !important;
+  color: #f1d083 !important;
+  background: rgba(0, 0, 0, 0.22) !important;
+  text-decoration: none !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  transition: color .2s ease, border-color .2s ease, transform .2s ease, background .2s ease !important;
+}
+
+.polished-report-strip .report-button:hover {
+  color: #ffffff !important;
+  border-color: rgba(97, 214, 162, 0.55) !important;
+  background: rgba(97, 214, 162, 0.12) !important;
+  transform: translateY(-1px) !important;
+}
+
+@media (max-width: 760px) {
+  .polished-report-strip {
+    display: grid !important;
+    margin: 36px auto 24px !important;
+    padding: 16px !important;
+  }
+
+  .polished-report-strip .report-button {
+    width: 100% !important;
+  }
+}

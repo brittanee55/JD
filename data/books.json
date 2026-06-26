@@ -1,0 +1,271 @@
+[
+  {
+    "id": "legacy-of-ashes",
+    "title": "Legacy of Ashes",
+    "author": "Tim Weiner",
+    "category": "intelligence",
+    "status": "documented",
+    "publishedYear": 2007,
+    "summary": "A historical examination of the CIA and its operations throughout the Cold War and beyond.",
+    "themes": [
+      "CIA",
+      "Cold War",
+      "Intelligence",
+      "Government",
+      "National Security"
+    ],
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "people": [
+      "allen-dulles",
+      "john-kiriakou"
+    ],
+    "concepts": [
+      "intelligence-agencies",
+      "covert-action",
+      "oversight"
+    ],
+    "locations": [
+      "washington-dc",
+      "langley",
+      "berlin"
+    ],
+    "timelineEvents": [
+      "cia-established-1947",
+      "cold-war-intelligence"
+    ]
+  },
+
+  {
+    "id": "inside-the-company",
+    "title": "Inside the Company",
+    "author": "Philip Agee",
+    "category": "intelligence",
+    "status": "source-review",
+    "publishedYear": 1975,
+    "summary": "A memoir and critique of intelligence operations from a former CIA officer.",
+    "themes": [
+      "CIA",
+      "Whistleblowers",
+      "Government",
+      "Intelligence"
+    ],
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "people": [
+      "philip-agee"
+    ],
+    "concepts": [
+      "covert-action",
+      "whistleblowers"
+    ],
+    "locations": [
+      "washington-dc",
+      "langley"
+    ],
+    "timelineEvents": [
+      "cold-war-intelligence"
+    ]
+  },
+
+  {
+    "id": "the-spy-and-the-traitor",
+    "title": "The Spy and the Traitor",
+    "author": "Ben Macintyre",
+    "category": "intelligence",
+    "status": "documented",
+    "publishedYear": 2018,
+    "summary": "The story of Cold War espionage between Soviet and Western intelligence agencies.",
+    "themes": [
+      "Espionage",
+      "Cold War",
+      "KGB",
+      "Intelligence"
+    ],
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "people": [],
+    "concepts": [
+      "cold-war",
+      "espionage"
+    ],
+    "locations": [
+      "berlin",
+      "london"
+    ],
+    "timelineEvents": [
+      "cold-war-intelligence"
+    ]
+  },
+
+  {
+    "id": "manufacturing-consent",
+    "title": "Manufacturing Consent",
+    "author": "Noam Chomsky & Edward Herman",
+    "category": "media",
+    "status": "documented",
+    "publishedYear": 1988,
+    "summary": "A study of media systems, propaganda, and public opinion.",
+    "themes": [
+      "Media",
+      "Propaganda",
+      "Public Opinion",
+      "Journalism"
+    ],
+    "episodes": [
+      "media-narratives-public-opinion"
+    ],
+    "people": [
+      "noam-chomsky",
+      "edward-herman"
+    ],
+    "concepts": [
+      "media-systems",
+      "propaganda",
+      "public-opinion"
+    ],
+    "locations": [
+      "new-york",
+      "london"
+    ],
+    "timelineEvents": [
+      "internet-public-infrastructure"
+    ]
+  },
+
+  {
+    "id": "the-body-keeps-the-score",
+    "title": "The Body Keeps the Score",
+    "author": "Bessel van der Kolk",
+    "category": "psychology",
+    "status": "documented",
+    "publishedYear": 2014,
+    "summary": "A widely known exploration of trauma, memory, healing, and the nervous system.",
+    "themes": [
+      "Trauma",
+      "Healing",
+      "Memory",
+      "Nervous System"
+    ],
+    "episodes": [
+      "trauma-memory-nervous-system"
+    ],
+    "people": [
+      "bessel-van-der-kolk"
+    ],
+    "concepts": [
+      "trauma",
+      "memory",
+      "nervous-system-regulation"
+    ],
+    "locations": [
+      "california"
+    ],
+    "timelineEvents": [
+      "trauma-research-expands"
+    ]
+  },
+
+  {
+    "id": "ancient-civilization-reader",
+    "title": "Ancient Civilization Reader",
+    "author": "Atlas Collection",
+    "category": "history",
+    "status": "documented",
+    "publishedYear": 2026,
+    "summary": "A collection of readings on ancient civilizations, architecture, symbolism, and historical memory.",
+    "themes": [
+      "Egypt",
+      "Civilization",
+      "Architecture",
+      "Mythology"
+    ],
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "people": [
+      "carl-jung"
+    ],
+    "concepts": [
+      "civilization",
+      "symbolism",
+      "mythology"
+    ],
+    "locations": [
+      "egypt"
+    ],
+    "timelineEvents": [
+      "early-egyptian-civilization"
+    ]
+  },
+
+  {
+    "id": "greek-philosophy-reader",
+    "title": "Greek Philosophy Reader",
+    "author": "Atlas Collection",
+    "category": "philosophy",
+    "status": "documented",
+    "publishedYear": 2026,
+    "summary": "Foundational ideas from Socrates, Plato, and Greek philosophical traditions.",
+    "themes": [
+      "Philosophy",
+      "Wisdom",
+      "Knowledge",
+      "Critical Thinking"
+    ],
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "people": [
+      "plato",
+      "socrates"
+    ],
+    "concepts": [
+      "philosophy",
+      "knowledge",
+      "critical-thinking"
+    ],
+    "locations": [
+      "greece"
+    ],
+    "timelineEvents": [
+      "ancient-greek-thought"
+    ]
+  },
+
+  {
+    "id": "consciousness-reality-reader",
+    "title": "Consciousness & Reality Reader",
+    "author": "Atlas Collection",
+    "category": "spirituality",
+    "status": "open-question",
+    "publishedYear": 2026,
+    "summary": "A curated exploration of consciousness, awareness, perception, and meaning.",
+    "themes": [
+      "Consciousness",
+      "Awareness",
+      "Meaning",
+      "Reality"
+    ],
+    "episodes": [
+      "consciousness-meaning-reality"
+    ],
+    "people": [
+      "buddha"
+    ],
+    "concepts": [
+      "consciousness",
+      "awareness",
+      "meaning"
+    ],
+    "locations": [
+      "india"
+    ],
+    "timelineEvents": [
+      "consciousness-traditions"
+    ]
+  }
+]

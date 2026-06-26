@@ -1,0 +1,74 @@
+
+/* =========================================================
+   TOP LEFT BRAND FIX: JD ONLY
+   Applies to desktop and mobile. Prevents duplicate JD text.
+   ========================================================= */
+
+.logo,
+.julian-logo,
+.jd-splash-logo,
+.jd-one-line-logo,
+.same-as-home-logo,
+.fixed-inner-logo,
+.universal-red-logo,
+.top-left-jd-logo,
+.navbar-brand {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  white-space: nowrap !important;
+}
+
+.logo span,
+.julian-logo span,
+.jd-splash-logo span,
+.jd-one-line-logo span,
+.same-as-home-logo span,
+.fixed-inner-logo span,
+.universal-red-logo span,
+.top-left-jd-logo span,
+.navbar-brand span {
+  font-size: 0 !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  max-width: none !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  color: transparent !important;
+}
+
+.logo span::after,
+.julian-logo span::after,
+.jd-splash-logo span::after,
+.jd-one-line-logo span::after,
+.same-as-home-logo span::after,
+.fixed-inner-logo span::after,
+.universal-red-logo span::after,
+.top-left-jd-logo span::after,
+.navbar-brand span::after {
+  content: "JD" !important;
+  display: inline-block !important;
+  font-size: 24px !important;
+  line-height: 1 !important;
+  letter-spacing: 3px !important;
+  color: #f7f1e5 !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 768px) {
+  .logo span::after,
+  .julian-logo span::after,
+  .jd-splash-logo span::after,
+  .jd-one-line-logo span::after,
+  .same-as-home-logo span::after,
+  .fixed-inner-logo span::after,
+  .universal-red-logo span::after,
+  .top-left-jd-logo span::after,
+  .navbar-brand span::after {
+    font-size: 22px !important;
+    letter-spacing: 3px !important;
+  }
+}

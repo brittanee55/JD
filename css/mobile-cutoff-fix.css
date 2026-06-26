@@ -1,0 +1,36 @@
+
+/* ===== MOBILE CUT-OFF FIX ===== */
+@media (max-width: 768px) {
+
+  /* prevent section headers being clipped */
+  .research-wing,
+  .episode-atlas,
+  .browse-episodes,
+  section {
+    overflow: visible !important;
+  }
+
+  /* allow headings to wrap properly */
+  h1, h2, h3 {
+    line-height: 1.2 !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  /* fix top "Research Wing / Episode Atlas" cropping */
+  .research-title,
+  .section-title,
+  .wing-title {
+    padding-top: 20px !important;
+    margin-top: 10px !important;
+    text-align: center !important;
+  }
+
+  /* ensure container not cutting content */
+  .container,
+  .content,
+  .main,
+  .page-section {
+    overflow: visible !important;
+  }
+}

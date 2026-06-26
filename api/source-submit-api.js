@@ -1,0 +1,1 @@
+window.saveSourceSubmission=function(entry){const all=JSON.parse(localStorage.getItem('atlasSourceSubmissions')||'[]');all.unshift({...entry,createdAt:new Date().toISOString()});localStorage.setItem('atlasSourceSubmissions',JSON.stringify(all));return all;};

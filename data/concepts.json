@@ -1,0 +1,462 @@
+[
+  {
+    "id": "intelligence-agencies",
+    "name": "Intelligence Agencies",
+    "category": "intelligence",
+    "status": "documented",
+    "summary": "Organizations responsible for gathering, analyzing, and acting upon intelligence related to national security and strategic interests.",
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "people": [
+      "john-kiriakou",
+      "allen-dulles",
+      "philip-agee"
+    ],
+    "books": [
+      "legacy-of-ashes",
+      "inside-the-company"
+    ],
+    "locations": [
+      "washington-dc",
+      "langley"
+    ],
+    "timelineEvents": [
+      "cia-established-1947",
+      "cold-war-intelligence"
+    ],
+    "relatedConcepts": [
+      "covert-action",
+      "oversight",
+      "source-literacy"
+    ]
+  },
+
+  {
+    "id": "covert-action",
+    "name": "Covert Action",
+    "category": "intelligence",
+    "status": "documented",
+    "summary": "Activities intended to influence events while concealing the sponsor's involvement.",
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "people": [
+      "allen-dulles",
+      "philip-agee"
+    ],
+    "books": [
+      "legacy-of-ashes",
+      "inside-the-company"
+    ],
+    "locations": [
+      "langley",
+      "berlin"
+    ],
+    "timelineEvents": [
+      "cold-war-intelligence"
+    ],
+    "relatedConcepts": [
+      "intelligence-agencies",
+      "oversight",
+      "espionage"
+    ]
+  },
+
+  {
+    "id": "source-literacy",
+    "name": "Source Literacy",
+    "category": "research",
+    "status": "documented",
+    "summary": "The ability to evaluate claims, evidence, context, and reliability of information.",
+    "episodes": [
+      "the-intelligence-game",
+      "media-narratives-public-opinion"
+    ],
+    "people": [],
+    "books": [
+      "manufacturing-consent"
+    ],
+    "locations": [
+      "washington-dc",
+      "new-york",
+      "london"
+    ],
+    "timelineEvents": [
+      "internet-public-infrastructure"
+    ],
+    "relatedConcepts": [
+      "public-opinion",
+      "media-systems",
+      "oversight"
+    ]
+  },
+
+  {
+    "id": "oversight",
+    "name": "Oversight",
+    "category": "government",
+    "status": "documented",
+    "summary": "Mechanisms used to review, regulate, and hold institutions accountable.",
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "people": [
+      "john-kiriakou"
+    ],
+    "books": [
+      "legacy-of-ashes"
+    ],
+    "locations": [
+      "washington-dc"
+    ],
+    "timelineEvents": [
+      "cia-established-1947"
+    ],
+    "relatedConcepts": [
+      "intelligence-agencies",
+      "source-literacy"
+    ]
+  },
+
+  {
+    "id": "cold-war",
+    "name": "Cold War",
+    "category": "history",
+    "status": "documented",
+    "summary": "The geopolitical struggle between the United States and Soviet Union following World War II.",
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "people": [
+      "allen-dulles"
+    ],
+    "books": [
+      "legacy-of-ashes",
+      "the-spy-and-the-traitor"
+    ],
+    "locations": [
+      "berlin",
+      "washington-dc"
+    ],
+    "timelineEvents": [
+      "cold-war-intelligence"
+    ],
+    "relatedConcepts": [
+      "espionage",
+      "covert-action"
+    ]
+  },
+
+  {
+    "id": "espionage",
+    "name": "Espionage",
+    "category": "history",
+    "status": "documented",
+    "summary": "The practice of gathering secret information for strategic or political purposes.",
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "people": [],
+    "books": [
+      "the-spy-and-the-traitor"
+    ],
+    "locations": [
+      "berlin",
+      "london"
+    ],
+    "timelineEvents": [
+      "cold-war-intelligence"
+    ],
+    "relatedConcepts": [
+      "cold-war",
+      "covert-action"
+    ]
+  },
+
+  {
+    "id": "media-systems",
+    "name": "Media Systems",
+    "category": "media",
+    "status": "documented",
+    "summary": "Structures and institutions through which information is distributed to the public.",
+    "episodes": [
+      "media-narratives-public-opinion"
+    ],
+    "people": [
+      "noam-chomsky",
+      "edward-herman"
+    ],
+    "books": [
+      "manufacturing-consent"
+    ],
+    "locations": [
+      "new-york",
+      "london"
+    ],
+    "timelineEvents": [
+      "internet-public-infrastructure"
+    ],
+    "relatedConcepts": [
+      "propaganda",
+      "public-opinion",
+      "source-literacy"
+    ]
+  },
+
+  {
+    "id": "propaganda",
+    "name": "Propaganda",
+    "category": "media",
+    "status": "source-review",
+    "summary": "Information designed to influence perceptions, attitudes, and behavior.",
+    "episodes": [
+      "media-narratives-public-opinion"
+    ],
+    "people": [
+      "noam-chomsky"
+    ],
+    "books": [
+      "manufacturing-consent"
+    ],
+    "locations": [
+      "new-york"
+    ],
+    "timelineEvents": [
+      "internet-public-infrastructure"
+    ],
+    "relatedConcepts": [
+      "media-systems",
+      "public-opinion"
+    ]
+  },
+
+  {
+    "id": "public-opinion",
+    "name": "Public Opinion",
+    "category": "media",
+    "status": "documented",
+    "summary": "Collective beliefs, attitudes, and perceptions held by a population.",
+    "episodes": [
+      "media-narratives-public-opinion"
+    ],
+    "books": [
+      "manufacturing-consent"
+    ],
+    "locations": [
+      "new-york",
+      "london"
+    ],
+    "timelineEvents": [
+      "internet-public-infrastructure"
+    ],
+    "relatedConcepts": [
+      "media-systems",
+      "source-literacy"
+    ]
+  },
+
+  {
+    "id": "trauma",
+    "name": "Trauma",
+    "category": "psychology",
+    "status": "documented",
+    "summary": "Psychological and physiological responses to overwhelming experiences.",
+    "episodes": [
+      "trauma-memory-nervous-system"
+    ],
+    "people": [
+      "bessel-van-der-kolk"
+    ],
+    "books": [
+      "the-body-keeps-the-score"
+    ],
+    "locations": [
+      "california"
+    ],
+    "timelineEvents": [
+      "trauma-research-expands"
+    ],
+    "relatedConcepts": [
+      "memory",
+      "nervous-system-regulation"
+    ]
+  },
+
+  {
+    "id": "memory",
+    "name": "Memory",
+    "category": "psychology",
+    "status": "documented",
+    "summary": "The processes involved in storing, retaining, and recalling information and experience.",
+    "episodes": [
+      "trauma-memory-nervous-system"
+    ],
+    "books": [
+      "the-body-keeps-the-score"
+    ],
+    "relatedConcepts": [
+      "trauma",
+      "nervous-system-regulation"
+    ]
+  },
+
+  {
+    "id": "nervous-system-regulation",
+    "name": "Nervous System Regulation",
+    "category": "psychology",
+    "status": "documented",
+    "summary": "Practices and mechanisms that influence autonomic nervous system balance.",
+    "episodes": [
+      "trauma-memory-nervous-system"
+    ],
+    "books": [
+      "the-body-keeps-the-score"
+    ],
+    "people": [
+      "bessel-van-der-kolk"
+    ],
+    "relatedConcepts": [
+      "trauma",
+      "memory"
+    ]
+  },
+
+  {
+    "id": "symbolism",
+    "name": "Symbolism",
+    "category": "history",
+    "status": "documented",
+    "summary": "The use of symbols to represent ideas, values, archetypes, and meaning.",
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "people": [
+      "carl-jung"
+    ],
+    "books": [
+      "ancient-civilization-reader"
+    ],
+    "locations": [
+      "egypt"
+    ],
+    "relatedConcepts": [
+      "mythology",
+      "collective-unconscious"
+    ]
+  },
+
+  {
+    "id": "mythology",
+    "name": "Mythology",
+    "category": "history",
+    "status": "documented",
+    "summary": "Traditional stories used to explain meaning, identity, culture, and the world.",
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "books": [
+      "ancient-civilization-reader"
+    ],
+    "locations": [
+      "egypt",
+      "greece"
+    ],
+    "relatedConcepts": [
+      "symbolism",
+      "civilization"
+    ]
+  },
+
+  {
+    "id": "philosophy",
+    "name": "Philosophy",
+    "category": "philosophy",
+    "status": "documented",
+    "summary": "The study of knowledge, reality, ethics, meaning, and existence.",
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "people": [
+      "plato",
+      "socrates"
+    ],
+    "books": [
+      "greek-philosophy-reader"
+    ],
+    "locations": [
+      "greece"
+    ],
+    "relatedConcepts": [
+      "knowledge",
+      "meaning"
+    ]
+  },
+
+  {
+    "id": "consciousness",
+    "name": "Consciousness",
+    "category": "spirituality",
+    "status": "open-question",
+    "summary": "Awareness of self, perception, experience, and reality.",
+    "episodes": [
+      "consciousness-meaning-reality"
+    ],
+    "people": [
+      "buddha"
+    ],
+    "books": [
+      "consciousness-reality-reader"
+    ],
+    "locations": [
+      "india"
+    ],
+    "relatedConcepts": [
+      "awareness",
+      "meaning"
+    ]
+  },
+
+  {
+    "id": "awareness",
+    "name": "Awareness",
+    "category": "spirituality",
+    "status": "open-question",
+    "summary": "The capacity to notice experience, thoughts, sensations, and perception.",
+    "episodes": [
+      "consciousness-meaning-reality"
+    ],
+    "people": [
+      "buddha"
+    ],
+    "books": [
+      "consciousness-reality-reader"
+    ],
+    "relatedConcepts": [
+      "consciousness",
+      "meaning"
+    ]
+  },
+
+  {
+    "id": "meaning",
+    "name": "Meaning",
+    "category": "philosophy",
+    "status": "open-question",
+    "summary": "The significance humans assign to life, events, values, and experiences.",
+    "episodes": [
+      "consciousness-meaning-reality"
+    ],
+    "books": [
+      "consciousness-reality-reader"
+    ],
+    "people": [
+      "plato",
+      "buddha"
+    ],
+    "relatedConcepts": [
+      "consciousness",
+      "philosophy"
+    ]
+  }
+]

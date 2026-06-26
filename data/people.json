@@ -1,0 +1,278 @@
+[
+  {
+    "id": "john-kiriakou",
+    "name": "John Kiriakou",
+    "category": "intelligence",
+    "status": "living",
+    "summary": "Former CIA officer known for speaking publicly about intelligence operations and government transparency.",
+    "occupation": "Former CIA Officer",
+    "nationality": "American",
+    "birthYear": 1964,
+    "locations": [
+      "washington-dc",
+      "langley"
+    ],
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "books": [],
+    "concepts": [
+      "intelligence-agencies",
+      "oversight",
+      "whistleblowers"
+    ],
+    "timelineEvents": [
+      "post-9-11-intelligence-era"
+    ]
+  },
+
+  {
+    "id": "allen-dulles",
+    "name": "Allen Dulles",
+    "category": "intelligence",
+    "status": "historical",
+    "summary": "Director of Central Intelligence during the Cold War and a significant figure in the development of modern intelligence operations.",
+    "occupation": "CIA Director",
+    "nationality": "American",
+    "birthYear": 1893,
+    "deathYear": 1969,
+    "locations": [
+      "washington-dc",
+      "langley"
+    ],
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "books": [
+      "legacy-of-ashes"
+    ],
+    "concepts": [
+      "cold-war",
+      "covert-action"
+    ],
+    "timelineEvents": [
+      "cold-war-intelligence"
+    ]
+  },
+
+  {
+    "id": "philip-agee",
+    "name": "Philip Agee",
+    "category": "intelligence",
+    "status": "historical",
+    "summary": "Former CIA officer who later became a critic of intelligence operations and covert intervention.",
+    "occupation": "Former CIA Officer",
+    "nationality": "American",
+    "birthYear": 1935,
+    "deathYear": 2008,
+    "locations": [
+      "washington-dc"
+    ],
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "books": [
+      "inside-the-company"
+    ],
+    "concepts": [
+      "covert-action",
+      "intelligence-agencies"
+    ],
+    "timelineEvents": [
+      "cold-war-intelligence"
+    ]
+  },
+
+  {
+    "id": "noam-chomsky",
+    "name": "Noam Chomsky",
+    "category": "media",
+    "status": "living",
+    "summary": "Linguist, political commentator, and co-author of Manufacturing Consent.",
+    "occupation": "Scholar",
+    "nationality": "American",
+    "birthYear": 1928,
+    "locations": [
+      "new-york"
+    ],
+    "episodes": [
+      "media-narratives-public-opinion"
+    ],
+    "books": [
+      "manufacturing-consent"
+    ],
+    "concepts": [
+      "media-systems",
+      "propaganda",
+      "public-opinion"
+    ],
+    "timelineEvents": [
+      "internet-public-infrastructure"
+    ]
+  },
+
+  {
+    "id": "edward-herman",
+    "name": "Edward Herman",
+    "category": "media",
+    "status": "historical",
+    "summary": "Economist and media analyst known for his work on propaganda and media systems.",
+    "occupation": "Economist",
+    "nationality": "American",
+    "birthYear": 1925,
+    "deathYear": 2017,
+    "locations": [
+      "new-york"
+    ],
+    "episodes": [
+      "media-narratives-public-opinion"
+    ],
+    "books": [
+      "manufacturing-consent"
+    ],
+    "concepts": [
+      "media-systems",
+      "propaganda"
+    ],
+    "timelineEvents": [
+      "internet-public-infrastructure"
+    ]
+  },
+
+  {
+    "id": "bessel-van-der-kolk",
+    "name": "Bessel van der Kolk",
+    "category": "psychology",
+    "status": "living",
+    "summary": "Psychiatrist and researcher known for trauma studies and mind-body healing approaches.",
+    "occupation": "Psychiatrist",
+    "nationality": "Dutch-American",
+    "birthYear": 1943,
+    "locations": [
+      "california"
+    ],
+    "episodes": [
+      "trauma-memory-nervous-system"
+    ],
+    "books": [
+      "the-body-keeps-the-score"
+    ],
+    "concepts": [
+      "trauma",
+      "memory",
+      "nervous-system-regulation"
+    ],
+    "timelineEvents": [
+      "trauma-research-expands"
+    ]
+  },
+
+  {
+    "id": "carl-jung",
+    "name": "Carl Jung",
+    "category": "psychology",
+    "status": "historical",
+    "summary": "Psychiatrist known for archetypes, symbolism, dreams, and the collective unconscious.",
+    "occupation": "Psychiatrist",
+    "nationality": "Swiss",
+    "birthYear": 1875,
+    "deathYear": 1961,
+    "locations": [
+      "greece",
+      "egypt"
+    ],
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "books": [],
+    "concepts": [
+      "archetypes",
+      "symbolism",
+      "collective-unconscious"
+    ],
+    "timelineEvents": [
+      "jungian-psychology"
+    ]
+  },
+
+  {
+    "id": "plato",
+    "name": "Plato",
+    "category": "philosophy",
+    "status": "historical",
+    "summary": "Ancient Greek philosopher whose work influenced philosophy, politics, and education.",
+    "occupation": "Philosopher",
+    "nationality": "Greek",
+    "birthYear": -428,
+    "deathYear": -348,
+    "locations": [
+      "greece"
+    ],
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "books": [],
+    "concepts": [
+      "philosophy",
+      "meaning",
+      "knowledge"
+    ],
+    "timelineEvents": [
+      "ancient-greek-thought"
+    ]
+  },
+
+  {
+    "id": "socrates",
+    "name": "Socrates",
+    "category": "philosophy",
+    "status": "historical",
+    "summary": "Greek philosopher known for questioning assumptions and pursuing wisdom through dialogue.",
+    "occupation": "Philosopher",
+    "nationality": "Greek",
+    "birthYear": -470,
+    "deathYear": -399,
+    "locations": [
+      "greece"
+    ],
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "books": [],
+    "concepts": [
+      "philosophy",
+      "critical-thinking",
+      "knowledge"
+    ],
+    "timelineEvents": [
+      "ancient-greek-thought"
+    ]
+  },
+
+  {
+    "id": "buddha",
+    "name": "Siddhartha Gautama",
+    "category": "spirituality",
+    "status": "historical",
+    "summary": "Founder of Buddhism whose teachings explored suffering, awareness, and liberation.",
+    "occupation": "Spiritual Teacher",
+    "nationality": "Indian",
+    "birthYear": -563,
+    "deathYear": -483,
+    "locations": [
+      "india"
+    ],
+    "episodes": [
+      "consciousness-meaning-reality"
+    ],
+    "books": [],
+    "concepts": [
+      "awareness",
+      "consciousness",
+      "meaning"
+    ],
+    "timelineEvents": [
+      "consciousness-traditions"
+    ]
+  }
+]

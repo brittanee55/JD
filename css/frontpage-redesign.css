@@ -1,0 +1,455 @@
+
+/* =========================================================
+   FRONT PAGE REDESIGN
+   Desktop: premium globe homepage.
+   Mobile: desktop hero hidden; mobile portal shown.
+   ========================================================= */
+
+.mobile-atlas-portal { display: none; }
+
+.homepage-splash-body .site-header,
+.homepage-splash-body .home-hero {
+  display: none !important;
+}
+
+.jd-home-splash {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 100vh !important;
+  overflow: hidden !important;
+  background: #020807 !important;
+  border-bottom: 1px solid rgba(217,164,65,.22) !important;
+}
+
+.jd-splash-navbar {
+  position: relative !important;
+  z-index: 50 !important;
+  height: 78px !important;
+  padding: 0 28px !important;
+  display: grid !important;
+  grid-template-columns: 250px 1fr 210px 54px !important;
+  align-items: center !important;
+  gap: 14px !important;
+  background: rgba(1, 7, 7, 0.92) !important;
+  border-bottom: 1px solid rgba(217,164,65,.2) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.jd-splash-logo {
+  gap: 12px !important;
+}
+
+.jd-splash-logo img {
+  width: 44px !important;
+  height: 44px !important;
+  filter: none !important;
+}
+
+.jd-splash-logo span {
+  color: #f7f1e5 !important;
+  text-transform: uppercase !important;
+  font-size: 18px !important;
+  letter-spacing: 3px !important;
+  font-weight: 500 !important;
+}
+
+.jd-splash-links {
+  justify-content: center !important;
+  gap: 24px !important;
+}
+
+.jd-splash-links a {
+  color: #f7f1e5 !important;
+  font-size: 14px !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-weight: 500 !important;
+}
+
+.jd-splash-links a:first-child {
+  color: #d9a441 !important;
+  position: relative !important;
+}
+
+.jd-splash-links a:first-child::after {
+  content: "✦";
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  color: #d9a441;
+  font-size: 12px;
+}
+
+.jd-splash-login {
+  justify-self: end !important;
+  padding: 13px 18px !important;
+  border-radius: 8px !important;
+  color: #d9a441 !important;
+  font-size: 15px !important;
+  border-color: rgba(217,164,65,.62) !important;
+}
+
+.jd-splash-navbar::after {
+  content: "☰";
+  width: 48px;
+  height: 48px;
+  justify-self: end;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(217,164,65,.42);
+  color: #d9a441;
+  font-size: 22px;
+}
+
+.desktop-atlas-home {
+  position: relative;
+  min-height: calc(100vh - 78px);
+  padding: 34px 70px 36px;
+  display: grid;
+  grid-template-columns: minmax(360px, 35vw) 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 26px 36px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 72% 42%, rgba(217,164,65,.11), transparent 40%),
+    radial-gradient(circle at 20% 20%, rgba(97,214,162,.09), transparent 36%),
+    linear-gradient(180deg, #020807 0%, #06110f 52%, #020807 100%);
+}
+
+.desktop-atlas-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .36;
+  pointer-events: none;
+  background:
+    url("../assets/images/old-map-texture.jpg") center/cover no-repeat,
+    radial-gradient(circle, rgba(217,164,65,.65) 1px, transparent 1.4px);
+  mix-blend-mode: screen;
+}
+
+.desktop-atlas-copy,
+.desktop-atlas-globe,
+.desktop-layer-panel {
+  position: relative;
+  z-index: 2;
+}
+
+.desktop-atlas-copy {
+  align-self: center;
+  text-align: center;
+  max-width: 470px;
+}
+
+.desktop-portal-symbol-wrap {
+  width: 116px;
+  height: 116px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(217,164,65,.28);
+  background: radial-gradient(circle, rgba(179,32,37,.12), transparent 62%), rgba(0,0,0,.16);
+  box-shadow: 0 0 44px rgba(179,32,37,.18);
+}
+
+.desktop-portal-symbol {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+}
+
+.desktop-portal-divider {
+  width: min(72%, 300px);
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d9a441;
+}
+
+.desktop-portal-divider::before,
+.desktop-portal-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, rgba(217,164,65,.72), transparent);
+}
+
+.desktop-atlas-copy h1 {
+  margin: 0 auto 14px;
+  color: #f7f1e5;
+  font-size: clamp(58px, 6vw, 86px);
+  line-height: .95;
+  letter-spacing: -.04em;
+  text-shadow: 0 5px 28px rgba(0,0,0,.55);
+}
+
+.desktop-atlas-copy h1 span {
+  display: block;
+  color: #d9a441;
+}
+
+.desktop-atlas-copy p {
+  margin: 0 auto 28px;
+  color: rgba(247,241,229,.78);
+  font-size: 20px;
+  line-height: 1.42;
+}
+
+.desktop-portal-actions {
+  display: grid;
+  gap: 12px;
+  width: min(100%, 410px);
+  margin: 0 auto 30px;
+}
+
+.desktop-portal-actions a {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.desktop-portal-primary {
+  color: #fff;
+  border: 1px solid rgba(97,214,162,.42);
+  background: linear-gradient(135deg, rgba(13,123,88,.94), rgba(5,66,50,.92));
+  box-shadow: 0 16px 38px rgba(0,0,0,.3);
+}
+
+.desktop-portal-secondary {
+  color: #d9a441;
+  border: 1px solid rgba(217,164,65,.55);
+  background: rgba(0,0,0,.24);
+}
+
+.desktop-portal-stats {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 18px;
+}
+
+.desktop-portal-stats div {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-areas: "icon num" "icon label";
+  align-items: center;
+  gap: 0 8px;
+  padding-right: 14px;
+  border-right: 1px solid rgba(217,164,65,.16);
+}
+
+.desktop-portal-stats div:last-child {
+  border-right: 0;
+}
+
+.desktop-portal-stats span {
+  grid-area: icon;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(217,164,65,.24);
+  border-radius: 50%;
+  color: #d9a441;
+}
+
+.desktop-portal-stats strong {
+  grid-area: num;
+  color: #d9a441;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.desktop-portal-stats strong.green,
+.desktop-portal-stats span.green {
+  color: #61d6a2;
+}
+
+.desktop-portal-stats strong.blue,
+.desktop-portal-stats span.blue {
+  color: #39bdf8;
+}
+
+.desktop-portal-stats em {
+  grid-area: label;
+  color: rgba(247,241,229,.72);
+  font-style: normal;
+  font-size: 12px;
+}
+
+.desktop-atlas-globe {
+  align-self: center;
+  justify-self: stretch;
+  min-height: 600px;
+  background:
+    radial-gradient(circle at 72% 43%, transparent 0%, rgba(2,8,7,.08) 46%, rgba(2,8,7,.72) 77%),
+    url("../assets/images/globe-preview.jpg") center/cover no-repeat;
+  border-radius: 24px;
+  filter: saturate(1.08) contrast(1.08);
+  box-shadow: inset 0 0 100px rgba(2,8,7,.86);
+  mask-image: radial-gradient(circle at 60% 48%, #000 0 55%, transparent 78%);
+}
+
+.desktop-layer-panel {
+  grid-column: 1 / -1;
+  width: min(94vw, 1360px);
+  margin: 0 auto;
+  padding: 18px 18px 12px;
+  border: 1px solid rgba(217,164,65,.33);
+  border-radius: 10px;
+  background: rgba(1,12,9,.45);
+  box-shadow: 0 24px 80px rgba(0,0,0,.24);
+}
+
+.desktop-layer-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: #d9a441;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 15px;
+}
+
+.desktop-layer-title span {
+  height: 1px;
+  width: 120px;
+  background: linear-gradient(90deg, transparent, rgba(217,164,65,.75), transparent);
+}
+
+.desktop-layer-row {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+}
+
+.desktop-layer-row button {
+  background: transparent;
+  border: 0;
+  color: #f1d083;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.desktop-layer-row i {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(217,164,65,.42);
+  border-radius: 50%;
+  font-size: 25px;
+  font-style: normal;
+  background: rgba(0,0,0,.2);
+}
+
+.desktop-layer-row b {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.desktop-layer-note {
+  margin-top: 14px;
+  padding: 14px;
+  border: 1px solid rgba(217,164,65,.22);
+  border-radius: 8px;
+  text-align: center;
+  color: rgba(247,241,229,.78);
+  background: rgba(0,0,0,.18);
+}
+
+@media (max-width: 1100px) {
+  .desktop-atlas-home {
+    grid-template-columns: 1fr;
+    padding: 120px 24px 36px;
+  }
+  .desktop-atlas-globe {
+    min-height: 380px;
+  }
+  .desktop-layer-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .desktop-atlas-home,
+  .desktop-layer-panel,
+  .desktop-atlas-globe,
+  .desktop-atlas-copy {
+    display: none !important;
+  }
+
+  .jd-home-splash {
+    min-height: auto !important;
+    overflow: visible !important;
+  }
+
+  .jd-splash-navbar {
+    position: sticky !important;
+    top: 0 !important;
+    min-height: 104px !important;
+    height: auto !important;
+    grid-template-columns: 1fr auto auto !important;
+    padding: 20px 20px !important;
+  }
+
+  .jd-splash-links {
+    display: none !important;
+  }
+
+  .jd-splash-navbar::after {
+    display: grid !important;
+  }
+
+  .jd-splash-logo img {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .jd-splash-logo span {
+    font-size: 22px !important;
+    letter-spacing: 4px !important;
+  }
+
+  .jd-splash-login {
+    font-size: 18px !important;
+    padding: 14px 20px !important;
+  }
+
+  body.hka-homepage .mobile-atlas-portal {
+    display: block !important;
+  }
+}
+
+
+/* REMOVE DUPLICATE LAYERS CLEANUP */
+.layers-section + .section,
+.desktop-layer-panel + .section,
+.mobile-atlas-portal + .section {
+  margin-top: 0 !important;
+}
+
+.layers-section {
+  margin-bottom: 34px !important;
+}
+
+
+/* STATS STRIP REMOVED: pull Explore the Atlas Through Layers up by 50px */
+.desktop-layer-panel,
+.layers-section {
+  margin-top: -50px !important;
+}

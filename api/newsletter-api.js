@@ -1,0 +1,1 @@
+window.saveNewsletterSignup=function(email,name=''){const all=JSON.parse(localStorage.getItem('atlasNewsletter')||'[]');all.unshift({email,name,createdAt:new Date().toISOString()});localStorage.setItem('atlasNewsletter',JSON.stringify(all));return all;};

@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin Dashboard | Human Knowledge Atlas</title><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="admin.css"><script defer src="admin.js"></script>  <script defer src="../js/cookie-consent.js"></script>  <link rel="stylesheet" href="../css/mobile-responsive.css" />
+  <script defer src="../js/mobile-responsive.js"></script>
+  <script defer src="../js/mobile-portrait-fit.js"></script>
+  <link rel="stylesheet" href="../css/premium-mobile-menu.css" />
+  <script defer src="../js/premium-mobile-menu.js"></script>
+  <link rel="stylesheet" href="css/mobile-cutoff-fix.css">
+  <link rel="stylesheet" href="../css/top-left-jd-only.css" />
+</head><body><header class="site-header"><nav class="navbar"><a href="../index.html" class="logo"><span>JD</span></a><div class="nav-links"><a href="../index.html">Home</a><a href="../research-wing/transcripts.html">Transcripts</a></div>
+<a class="same-as-home-login" href="../authentication/login.html">
+  <span class="login-icon">♙</span>
+  <span>Login / Sign Up</span>
+</a>
+</nav></header><main><section class="page-hero"><p class="eyebrow">Admin Dashboard</p><h1>Add Concept</h1><p>Demo admin panel for adding draft content without touching code. Later this connects to Firebase.</p></section><section class="admin-layout"><aside class="admin-panel"><h3>Content Types</h3><p>Episodes, People, Books, Concepts, Locations, Timeline Events, Courses, Blog Posts, Transcript Notes.</p></aside><form class="admin-form" id="adminContentForm"><label>Content Type</label><select id="contentType"><option>Episode</option><option>Person</option><option>Book</option><option>Concept</option><option>Location</option><option>Timeline Event</option><option>Transcript Note</option></select><label>Title</label><input id="contentTitle" required><label>Summary</label><textarea id="contentSummary" required></textarea><button class="btn primary">Save Demo Draft</button><pre id="adminOutput"></pre></form></section></main></body></html>

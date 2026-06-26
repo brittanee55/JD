@@ -1,0 +1,168 @@
+/* =========================================================
+   RESPONSIVE.CSS
+   Used on: ALL HTML pages
+   Purpose: Tablet and mobile layout
+   ========================================================= */
+
+@media (max-width: 1150px) {
+  .menu-btn {
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 76px;
+    left: 16px;
+    right: 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 18px;
+    background: rgba(2, 8, 6, 0.98);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 12px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .nav-support {
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .atlas-tree {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featured-grid,
+  .newsletter-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .home-hero {
+    min-height: 620px;
+    padding: 90px 20px 60px;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(42px, 12vw, 64px);
+  }
+
+  .button-row,
+  .home-hero .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .atlas-tree {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 18px;
+  }
+
+  .tree-wing {
+    padding: 22px 14px;
+  }
+
+  .tree-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 28px;
+  }
+
+  .tree-wing h3 {
+    font-size: 16px;
+  }
+
+  .layer-scroll {
+    gap: 18px;
+  }
+
+  .card-grid.three,
+  .preview-grid.three,
+  .dual-feature-section {
+    grid-template-columns: 1fr;
+  }
+
+  .media-card.horizontal {
+    grid-template-columns: 1fr;
+  }
+
+  .media-card img {
+    height: 210px;
+  }
+
+  .wide-feature {
+    min-height: 280px;
+    padding: 30px;
+  }
+
+  .newsletter-inline-form {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    width: min(100% - 24px, 1280px);
+  }
+
+  .logo span {
+    max-width: 120px;
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .atlas-tree {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .tree-wing p {
+    font-size: 14px;
+  }
+
+  .mini-person {
+    grid-template-columns: 72px 1fr;
+  }
+
+  .mini-person img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

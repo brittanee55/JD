@@ -1,0 +1,120 @@
+
+.legal-main {
+  background:
+    radial-gradient(circle at top left, rgba(179,32,37,.12), transparent 34%),
+    linear-gradient(180deg, #020807, #06110f 50%, #020807);
+  color: var(--text, #f7f1e5);
+  min-height: 100vh;
+}
+.legal-hero {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 76px 0 38px;
+}
+.legal-hero h1 {
+  font-size: clamp(42px, 6vw, 84px);
+  line-height: .95;
+  margin: 10px 0 18px;
+}
+.legal-hero p {
+  max-width: 780px;
+  color: var(--muted, #c8bfae);
+  font-size: 18px;
+}
+.legal-updated {
+  font-size: 14px !important;
+  color: #d9a441 !important;
+}
+.legal-layout {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 28px;
+  padding-bottom: 80px;
+}
+.legal-sidebar {
+  position: sticky;
+  top: 96px;
+  align-self: start;
+  border: 1px solid rgba(217,164,65,.18);
+  background: rgba(0,0,0,.28);
+  padding: 20px;
+  border-radius: 14px;
+}
+.legal-sidebar h3 {
+  color: #fff;
+  margin: 0 0 14px;
+}
+.legal-sidebar a {
+  display: block;
+  color: #f1d083;
+  text-decoration: none;
+  padding: 9px 0;
+  font-size: 14px;
+}
+.legal-sidebar a:hover {
+  color: #61d6a2;
+}
+.legal-card {
+  border: 1px solid rgba(217,164,65,.18);
+  background: rgba(0,0,0,.26);
+  border-radius: 16px;
+  padding: 26px;
+  margin-bottom: 18px;
+}
+.legal-card h2 {
+  margin: 0 0 12px;
+  color: #fff;
+}
+.legal-card p, .legal-card li {
+  color: var(--muted, #c8bfae);
+  line-height: 1.72;
+}
+.legal-card a {
+  color: #61d6a2;
+}
+.legal-note {
+  border: 1px solid rgba(179,32,37,.35);
+  background: rgba(179,32,37,.12);
+  border-radius: 16px;
+  padding: 20px;
+  color: #f7f1e5;
+}
+.legal-form {
+  display: grid;
+  gap: 14px;
+}
+.legal-form label {
+  display: grid;
+  gap: 7px;
+  color: #f7f1e5;
+}
+.legal-form input, .legal-form select, .legal-form textarea {
+  width: 100%;
+  border: 1px solid rgba(217,164,65,.28);
+  background: rgba(0,0,0,.28);
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.legal-form textarea {
+  min-height: 140px;
+}
+.legal-form button {
+  justify-self: start;
+  border: 1px solid rgba(97,214,162,.45);
+  background: #0b684f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-weight: 800;
+}
+@media (max-width: 850px) {
+  .legal-layout {
+    grid-template-columns: 1fr;
+  }
+  .legal-sidebar {
+    position: static;
+  }
+}

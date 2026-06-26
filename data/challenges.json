@@ -1,0 +1,35 @@
+[
+  {
+    "id": "verify-one-claim",
+    "title": "Verify One Claim",
+    "category": "source-literacy",
+    "summary": "Choose one claim from an episode and compare two reliable sources plus one neutral context source.",
+    "difficulty": "Beginner",
+    "time": "30-45 minutes",
+    "relatedConcepts": [
+      "source-literacy"
+    ],
+    "steps": [
+      "Write the claim in one sentence",
+      "Find the original speaker/source",
+      "Compare at least two sources",
+      "Label fact, claim, theory, or open question"
+    ]
+  },
+  {
+    "id": "map-one-topic",
+    "title": "Map One Topic",
+    "category": "exploration",
+    "summary": "Pick an episode topic and connect it to one location, one timeline event, one person, and one book.",
+    "difficulty": "Beginner",
+    "time": "20 minutes"
+  },
+  {
+    "id": "journal-after-listening",
+    "title": "Journal After Listening",
+    "category": "reflection",
+    "summary": "Write what you believed before listening, what changed, and what still needs research.",
+    "difficulty": "Beginner",
+    "time": "15 minutes"
+  }
+]

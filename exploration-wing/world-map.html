@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>World Map | Human Knowledge Atlas</title>
+
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../3d-globe/globe-styles.css" />
+
+  <script src="https://unpkg.com/globe.gl@2.35.0/dist/globe.gl.min.js"></script>
+  <script src="../3d-globe/globe-data.js"></script>
+  <script src="../3d-globe/globe-controls.js"></script>
+  <script src="../3d-globe/globe.js"></script>
+
+  <script defer src="../script.js"></script>
+  <script defer src="../js/cookie-consent.js"></script>  <link rel="stylesheet" href="../css/mobile-responsive.css" />
+  <script defer src="../js/mobile-responsive.js"></script>
+  <script defer src="../js/mobile-portrait-fit.js"></script>
+  <link rel="stylesheet" href="../css/premium-mobile-menu.css" />
+  <script defer src="../js/premium-mobile-menu.js"></script>
+  <link rel="stylesheet" href="css/mobile-cutoff-fix.css">
+  <link rel="stylesheet" href="../css/top-left-jd-only.css" />
+</head>
+
+<body>
+
+<header class="site-header jd-one-line-header">
+  <nav class="jd-one-line-navbar" aria-label="Main navigation">
+    <a class="jd-one-line-logo" href="../index.html" aria-label="JD home"><img class="jd-one-line-symbol" src="../assets/images/atlas-mark.svg" alt="JD logo mark" /><span>JD</span></a>
+
+    <div class="jd-one-line-links" id="navLinks">
+      <a href="../index.html">Home</a>
+      <a href="../research-wing/episodes.html">Episodes</a>
+      <a href="../research-wing/people.html">People</a>
+      <a href="../research-wing/books.html">Books</a>
+      <a href="../research-wing/concepts.html">Concepts</a>
+      <a href="../exploration-wing/world-map.html">World Map</a>
+      <a href="../exploration-wing/timeline.html">Timeline</a>
+      <a href="../learning-wing/learning-paths.html">Learning</a>
+      <a href="../reflection-wing/journal-vault.html">Journal</a>
+      <a href="../reflection-wing/ai-episode-chat.html">AI Chat</a>
+      <a href="../community-wing/community.html">Community</a>
+    </div>
+
+    <a class="jd-one-line-login" href="../authentication/login.html">
+      <span class="login-icon">♙</span>
+      <span>Login / Sign Up</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="world-map-hero">
+    <div>
+      <p class="eyebrow">Exploration Wing</p>
+
+      <h1>Interactive 3D Globe</h1>
+
+      <p>
+        Rotate the globe, zoom in, and click marked locations to explore how places connect
+        to episodes, historical events, people, books, concepts, and learning paths.
+      </p>
+    </div>
+  </section>
+
+  <section class="globe-control-bar">
+    <button class="theme-chip active" data-globe-filter="all">All</button>
+    <button class="theme-chip" data-globe-filter="intelligence">Intelligence</button>
+    <button class="theme-chip" data-globe-filter="history">History</button>
+    <button class="theme-chip" data-globe-filter="media">Media</button>
+    <button class="theme-chip" data-globe-filter="psychology">Psychology</button>
+    <button class="theme-chip" data-globe-filter="spirituality">Spirituality</button>
+  </section>
+
+  <section class="globe-page-layout">
+
+    <div class="globe-shell">
+      <div id="atlasGlobe"></div>
+
+      <div class="globe-instructions">
+        <strong>How to use:</strong>
+        Drag to rotate · Scroll to zoom · Click a glowing point to open its Atlas card.
+      </div>
+    </div>
+
+    <aside class="location-info-panel" id="locationInfoPanel">
+      <p class="eyebrow">Selected Location</p>
+
+      <h2>Choose a location on the globe</h2>
+
+      <p>
+        Click any glowing marker to view its explanation, historical connections,
+        related episodes, people, books, concepts, and learning paths.
+      </p>
+
+      <div class="location-detail-box">
+        <h3>Atlas Connections</h3>
+        <ul>
+          <li>Episodes</li>
+          <li>Historical events</li>
+          <li>People and institutions</li>
+          <li>Books and sources</li>
+          <li>Concepts and themes</li>
+        </ul>
+      </div>
+    </aside>
+
+  </section>
+
+  <section class="section map-location-list-section">
+    <p class="eyebrow center">Location Database</p>
+
+    <h2 class="center">Every place becomes a knowledge node.</h2>
+
+    <div class="location-list-grid">
+
+      <article class="location-list-card">
+        <h3>Washington D.C.</h3>
+        <p>Federal agencies, national security, oversight, public records, and intelligence policy.</p>
+        <button class="location-jump-btn" data-location-id="washington-dc">View on Globe</button>
+      </article>
+
+      <article class="location-list-card">
+        <h3>Langley, Virginia</h3>
+        <p>CIA headquarters context, institutional intelligence history, and public accountability.</p>
+        <button class="location-jump-btn" data-location-id="langley">View on Globe</button>
+      </article>
+
+      <article class="location-list-card">
+        <h3>London</h3>
+        <p>Diplomacy, media systems, parliament, monarchy, and intelligence history.</p>
+        <button class="location-jump-btn" data-location-id="london">View on Globe</button>
+      </article>
+
+      <article class="location-list-card">
+        <h3>Post-War Europe</h3>
+        <p>Cold War influence, reconstruction, alliances, intelligence networks, and diplomacy.</p>
+        <button class="location-jump-btn" data-location-id="berlin">View on Globe</button>
+      </article>
+
+      <article class="location-list-card">
+        <h3>Egypt</h3>
+        <p>Ancient civilization, symbolism, architecture, mythology, and historical memory.</p>
+        <button class="location-jump-btn" data-location-id="egypt">View on Globe</button>
+      </article>
+
+      <article class="location-list-card">
+        <h3>Greece</h3>
+        <p>Ancient philosophy, democracy, mythology, civilization, and historical influence.</p>
+        <button class="location-jump-btn" data-location-id="greece">View on Globe</button>
+      </article>
+
+    </div>
+  </section>
+
+
+<section class="legal-report-strip polished-report-strip">
+  <div class="report-copy">
+    <span class="report-icon">⚑</span>
+    <div>
+      <h3>Report Content</h3>
+      <p>Notice something inaccurate, unsafe, inaccessible, or copyright-sensitive? Let us know so we can review it.</p>
+    </div>
+  </div>
+  <a class="report-button" href="../legal/contact.html">Report Issue</a>
+</section>
+
+</main>
+
+<footer class="footer hka-screenshot-footer hka-footer-refined-layout">
+  <div class="hka-footer-top">
+    <p>© 2026 Human Knowledge Atlas. All rights reserved.</p>
+
+    <div class="hka-footer-main-links">
+      <a href="../legal/editorial-standards.html">Editorial Standards</a>
+      <a href="../legal/privacy-policy.html">Privacy Policy</a>
+      <a href="../legal/terms-of-service.html">Terms of Service</a>
+    </div>
+  </div>
+
+  <div class="hka-footer-legal-links">
+    <a href="../legal/privacy-policy.html">Privacy</a>
+    <a href="../legal/cookie-policy.html">Cookies</a>
+    <a href="../legal/terms-of-service.html">Terms</a>
+    <a href="../legal/ai-disclaimer.html">AI Disclaimer</a>
+    <a href="../legal/accessibility.html">Accessibility</a>
+    <a href="../legal/data-request.html">Data Request</a>
+    <a href="../legal/do-not-sell.html">Do Not Sell / Share</a>
+    <a href="../legal/copyright.html">Copyright / DMCA</a>
+    <a href="../legal/contact.html">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>

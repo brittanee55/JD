@@ -1,0 +1,48 @@
+[
+  {
+    "id": "intelligence-and-public-trust",
+    "title": "Intelligence & Public Trust",
+    "summary": "CIA, media narratives, Cold War history, oversight, and source literacy.",
+    "courses": [
+      "source-literacy-101"
+    ],
+    "episodes": [
+      "the-intelligence-game"
+    ],
+    "locations": [
+      "washington-dc",
+      "langley",
+      "berlin"
+    ]
+  },
+  {
+    "id": "ancient-memory-and-symbols",
+    "title": "Ancient Memory & Symbols",
+    "summary": "Plato, Atlantis, mythology, ancient civilizations, and historical memory.",
+    "courses": [
+      "globe-history-lab"
+    ],
+    "episodes": [
+      "ancient-symbols-lost-civilizations"
+    ],
+    "locations": [
+      "egypt",
+      "greece"
+    ]
+  },
+  {
+    "id": "media-and-propaganda",
+    "title": "Media & Propaganda",
+    "summary": "How narratives travel through institutions, platforms, and public opinion.",
+    "courses": [
+      "source-literacy-101"
+    ],
+    "episodes": [
+      "media-narratives-public-opinion"
+    ],
+    "locations": [
+      "new-york",
+      "london"
+    ]
+  }
+]

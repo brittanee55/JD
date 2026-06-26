@@ -1,0 +1,212 @@
+[
+  {
+    "id": "the-intelligence-game",
+    "title": "The Intelligence Game: CIA, KGB & Global Power",
+    "episodeNumber": 175,
+    "category": "intelligence",
+    "status": "documented",
+    "duration": "3h 42m",
+    "summary": "A deep dive into intelligence agencies, Cold War influence, information networks, geopolitics, media systems, and the modern struggle for public trust.",
+    "themes": [
+      "CIA",
+      "KGB",
+      "Cold War",
+      "Covert Action",
+      "Public Trust",
+      "National Security"
+    ],
+    "people": [
+      "john-kiriakou",
+      "allen-dulles",
+      "philip-agee"
+    ],
+    "books": [
+      "legacy-of-ashes",
+      "inside-the-company",
+      "the-spy-and-the-traitor"
+    ],
+    "concepts": [
+      "intelligence-agencies",
+      "covert-action",
+      "source-literacy",
+      "oversight"
+    ],
+    "locations": [
+      "washington-dc",
+      "langley",
+      "berlin"
+    ],
+    "timelineEvents": [
+      "cia-established-1947",
+      "cold-war-intelligence"
+    ],
+    "journalPrompts": [
+      "What makes a source trustworthy to me?",
+      "What evidence would change my mind?",
+      "How do I separate documented history from interpretation?"
+    ],
+    "weeklyChallenge": "Verify one historical claim from the episode using at least two credible sources."
+  },
+  {
+    "id": "media-narratives-public-opinion",
+    "title": "Media Narratives & Public Opinion",
+    "episodeNumber": 142,
+    "category": "media",
+    "status": "source-review",
+    "duration": "2h 18m",
+    "summary": "An exploration of how stories spread, how public opinion forms, and how media systems influence belief.",
+    "themes": [
+      "Media",
+      "Journalism",
+      "Propaganda",
+      "Public Opinion",
+      "Narratives"
+    ],
+    "people": [
+      "noam-chomsky",
+      "edward-herman",
+      "ben-swann"
+    ],
+    "books": [
+      "manufacturing-consent"
+    ],
+    "concepts": [
+      "media-systems",
+      "propaganda",
+      "public-opinion",
+      "source-literacy"
+    ],
+    "locations": [
+      "london",
+      "new-york"
+    ],
+    "timelineEvents": [
+      "printing-press-revolution",
+      "internet-public-infrastructure"
+    ],
+    "journalPrompts": [
+      "What stories do I accept without checking?",
+      "How does media shape what I think is important?",
+      "What source would help me see another side?"
+    ],
+    "weeklyChallenge": "Compare how three sources describe the same event."
+  },
+  {
+    "id": "ancient-symbols-lost-civilizations",
+    "title": "Ancient Symbols & Lost Civilizations",
+    "episodeNumber": 118,
+    "category": "history",
+    "status": "documented",
+    "duration": "2h 56m",
+    "summary": "A historical exploration of symbols, myths, architecture, memory, and civilization.",
+    "themes": [
+      "Ancient Egypt",
+      "Ancient Greece",
+      "Symbolism",
+      "Mythology",
+      "Architecture",
+      "Civilization"
+    ],
+    "people": [],
+    "books": [
+      "ancient-civilization-reader",
+      "greek-philosophy-reader"
+    ],
+    "concepts": [
+      "civilization",
+      "symbolism",
+      "mythology",
+      "philosophy"
+    ],
+    "locations": [
+      "egypt",
+      "greece"
+    ],
+    "timelineEvents": [
+      "early-egyptian-civilization",
+      "ancient-greek-thought"
+    ],
+    "journalPrompts": [
+      "Why do humans create symbols?",
+      "What stories does architecture preserve?",
+      "How do myths shape identity?"
+    ],
+    "weeklyChallenge": "Choose one ancient symbol and research three interpretations of it."
+  },
+  {
+    "id": "trauma-memory-nervous-system",
+    "title": "Trauma, Memory & The Nervous System",
+    "episodeNumber": 96,
+    "category": "psychology",
+    "status": "documented",
+    "duration": "1h 54m",
+    "summary": "A conversation about psychology, trauma, embodiment, healing, memory, and behavioral patterns.",
+    "themes": [
+      "Trauma",
+      "Memory",
+      "Nervous System",
+      "Healing",
+      "Body Awareness"
+    ],
+    "people": [
+      "bessel-van-der-kolk"
+    ],
+    "books": [
+      "the-body-keeps-the-score"
+    ],
+    "concepts": [
+      "nervous-system-regulation",
+      "trauma",
+      "memory"
+    ],
+    "locations": [
+      "california"
+    ],
+    "timelineEvents": [
+      "trauma-research-expands"
+    ],
+    "journalPrompts": [
+      "What does safety feel like in my body?",
+      "What patterns do I notice under stress?",
+      "What helps me regulate?"
+    ],
+    "weeklyChallenge": "Track one body signal for seven days and write what you notice."
+  },
+  {
+    "id": "consciousness-meaning-reality",
+    "title": "Consciousness, Meaning & Reality",
+    "episodeNumber": 84,
+    "category": "spirituality",
+    "status": "open-question",
+    "duration": "2h 10m",
+    "summary": "A conversation exploring awareness, perception, spiritual traditions, and human meaning.",
+    "themes": [
+      "Consciousness",
+      "Meaning",
+      "Reality",
+      "Awareness",
+      "Spirituality"
+    ],
+    "people": [],
+    "books": [
+      "consciousness-reality-reader"
+    ],
+    "concepts": [
+      "consciousness",
+      "awareness",
+      "meaning"
+    ],
+    "locations": [
+      "india"
+    ],
+    "timelineEvents": [
+      "consciousness-traditions"
+    ],
+    "journalPrompts": [
+      "What does consciousness mean to me?",
+      "How do I experience meaning?",
+      "What questions feel unknowable but important?"
+    ],
+    "weeklyChallenge": "Spend ten minutes in silent observation and journal what you notice."
+  }
+]
